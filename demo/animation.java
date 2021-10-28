@@ -47,7 +47,7 @@ public class animation
 
     static void better_delay(int milliseconds)
     {
-        if (System.currentTimeMillis() - static_time >= milliseconds)
+        if (System.currentTimeMillis() - static_time >= milliseconds) // er is hier een fout
         {
             
         }
