@@ -4,7 +4,7 @@ public class animation
 {
     long static_time = System.currentTimeMillis();
     String file_path;
-    int frame = 1;
+    int frame = 1; //test 
     int X;
     int Y;
     GreenfootImage image;
