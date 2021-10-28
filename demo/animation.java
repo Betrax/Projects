@@ -4,14 +4,14 @@ public class animation
 {
     long static_time = System.currentTimeMillis();
     String file_path;
-    int frame = 1;
+    int frame = 1; //test 
     int X;
     int Y;
     GreenfootImage image;
 
     public animation(String path)
     {
-        file_path = path;
+        file_path = path; // AOPSHDOIASHOASD
         image = new GreenfootImage(file_path + frame + ".png");
         X = image.getWidth();
         Y = image.getHeight();
