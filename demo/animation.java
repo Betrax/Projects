@@ -1,20 +1,19 @@
 import greenfoot.*;
-
 public class animation
-{
-    long static_time = System.currentTimeMillis();
-    String file_path;
-    int frame = 1; //test 
+{    long static_time = System.currentTimeMillis();
+    int frame = 1;
     int X;
     int Y;
+    String file_path;
     GreenfootImage image;
 
     public animation(String path)
     {
-        file_path = path; // AOPSHDOIASHOASD
+        file_path = path;
         image = new GreenfootImage(file_path + frame + ".png");
         X = image.getWidth();
         Y = image.getHeight();
+
     }
 
     public GreenfootImage draw(int x, int y, int max_frames, int milliseconds)
@@ -44,15 +43,4 @@ public class animation
             return image;
         }
     }
-
-    static void better_delay(int milliseconds)
-    {
-        if (System.currentTimeMillis() - static_time >= milliseconds) // er is hier een fout
-        {
-            
-        }
-    }
-    {
-    }
-    
 }

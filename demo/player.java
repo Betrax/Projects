@@ -2,10 +2,10 @@ import greenfoot.*;
 
 public class player extends Actor
 {
-    animation run = new animation("C:/Users/Oguz/Documents/School/Greenfoot-windows-370/Projects/demo/images/player/run/");
+    animation idle = new animation("C:/Users/Oguz/Documents/School/Greenfoot-windows-370/Projects/demo/images/player/idle/");
     
     public void act()
     {
-        setImage(run.draw(500, 250, 8, 1));
+        setImage(idle.draw(1000, 1000, 7, 100));
     }
 }
