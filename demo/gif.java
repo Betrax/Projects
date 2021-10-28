@@ -1,4 +1,5 @@
 import greenfoot.*;
+
 public class gif
 {
     GifImage GifImage;
