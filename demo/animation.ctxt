@@ -4,6 +4,4 @@ comment1.params=path
 comment1.target=animation(java.lang.String)
 comment2.params=x\ y\ max_frames\ milliseconds
 comment2.target=greenfoot.GreenfootImage\ draw(int,\ int,\ int,\ int)
-comment3.params=milliseconds
-comment3.target=void\ better_delay(int)
-numComments=4
+numComments=3

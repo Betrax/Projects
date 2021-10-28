@@ -7,7 +7,7 @@ public class MyWorld extends World
     public MyWorld()
     {
         super(1200, 700, 1);
-        addObject(new player(), 1200/2, 700/2);
+        addObject(new player(), 100, 100);
     }
 
     public void act()
