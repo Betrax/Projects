@@ -11,7 +11,7 @@ public class animation
 
     public animation(String path)
     {
-        file_path = path;
+        file_path = path; // AOPSHDOIASHOASD
         image = new GreenfootImage(file_path + frame + ".png");
         X = image.getWidth();
         Y = image.getHeight();
