@@ -21,13 +21,16 @@ public class gif
         return GifImage.getCurrentImage();
     }
 }
-<<<<<<< HEAD
+
+
+
+
+
+
+
+
 
 
 
 
 //test1
-=======
-//test2
-//test1
->>>>>>> 2a9c7550c4d78f88466d5db80566cccdfb1da6c3
