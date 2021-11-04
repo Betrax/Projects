@@ -21,5 +21,4 @@ public class gif
         return GifImage.getCurrentImage();
     }
 }
-//test1
-//test5
+//test6
