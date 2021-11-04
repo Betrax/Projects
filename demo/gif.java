@@ -21,9 +21,3 @@ public class gif
         return GifImage.getCurrentImage();
     }
 }
-//test3
-//te
-//ji
-//kjoikji
-//test1k
-//jijhg
