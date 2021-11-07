@@ -9,7 +9,6 @@ public class MyWorld extends World
         super(1200, 700, 1);
         addObject(new player(), 100, 100);
     }
-
     public void act()
     {
         setBackground(background.draw(260, 260));
