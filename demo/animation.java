@@ -1,7 +1,7 @@
 import greenfoot.*;
 
 public class animation
-{    long static_time = System.currentTimeMillis();
+{   long static_time = System.currentTimeMillis();
     int frame = 1;
     int X;
     int Y;
@@ -45,4 +45,3 @@ public class animation
         }
     }
 }
-//test
