@@ -12,7 +12,7 @@ public class gif
         this.X = this.GifImage.getCurrentImage().getWidth();
         this.Y = this.GifImage.getCurrentImage().getHeight();
     }
-    
+
     public GreenfootImage draw(int x, int y)
     {
         int wide = X * x / 100;

@@ -14,10 +14,7 @@ public class Room2 extends BaseRoom
     {
         super(escapeGame);
         setBackground("space.jpg"); //achtergrond
-        //eigen objecten toevoegen
-        for(int i=0;i<10;i++){
-            addObject(new Meteoriet(),getWidth()/2, getHeight()/2);
-        }
+        
     }
         
 

@@ -9,3 +9,4 @@ public class player extends Actor
         setImage(idle.draw(1000, 1000, 7, 100));
     }
 }
+//Saad
