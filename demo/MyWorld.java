@@ -1,12 +1,12 @@
 import greenfoot.*;
 
-public class MyWorld extends World
+public class MyWorld extends BaseRoom
 {
     gif background = new gif("forest.gif");
 
-    public MyWorld()
+    public MyWorld(EscapeGame escapeGame)
     {
-        super(1200, 700, 1);
+        super(escapeGame);
         addObject(new player(), 100, 100);
     }
 
@@ -14,4 +14,5 @@ public class MyWorld extends World
     {
         setBackground(background.draw(260, 260));
     }
+
 }

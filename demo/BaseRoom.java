@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BaseRoom extends World
 {
     public static final int RESOLUTION = 1;
-    public static final int WIDTH = 800;
-    public static final int HEIGHT = 600;
+    public static final int WIDTH = 1200;
+    public static final int HEIGHT = 700;
 
     protected EscapeGame escapeGame;
 

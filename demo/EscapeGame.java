@@ -9,11 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class EscapeGame extends World
 {
     public static final int RESOLUTION = 1;
-    public static final int WIDTH = 800;
-    public static final int HEIGHT = 600;
+    public static final int WIDTH = 1200;
+    public static final int HEIGHT = 700;
 
-    private BaseRoom room1; //onthoudt de rooms
-    private BaseRoom room2;
+    public static BaseRoom room1; //onthoudt de rooms
+    public static BaseRoom room2;
+    public static BaseRoom myworld1;
     private BaseRoom currentRoom; //de huidige room
     public EscapeGame()
     {    
@@ -22,6 +23,7 @@ public class EscapeGame extends World
         //initialiseer de kamers   
         room1 = new Room1(this); //geeft EscapeGame mee
         room2 = new Room2(this);
+        myworld1 = new MyWorld(this);
         SetRoom(room1);
 
        
@@ -35,15 +37,20 @@ public class EscapeGame extends World
 
     public void NextRoom()
     {
-        if(currentRoom == room1)
+        if (currentRoom == myworld1) {
+            
+            SetRoom(room1);
+            
+        }
+        else if(currentRoom == room1)
         {
             SetRoom(room2);
            
         }
+       
         else
         {
             SetRoom(room1);
-            
         }
     }
 }

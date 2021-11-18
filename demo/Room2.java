@@ -13,7 +13,10 @@ public class Room2 extends BaseRoom
     public Room2(EscapeGame escapeGame)
     {
         super(escapeGame);
-        setBackground("space.jpg"); //achtergrond
+        
+        GreenfootImage background = (new GreenfootImage("basement.png"));
+        background.scale(getWidth(), getHeight());
+        setBackground(background);
         
     }
         
