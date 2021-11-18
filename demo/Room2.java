@@ -14,7 +14,7 @@ public class Room2 extends BaseRoom
     {
         super(escapeGame);
         
-        GreenfootImage background = (new GreenfootImage("basement.png"));
+        GreenfootImage background = (new GreenfootImage("banaan.jpg"));
         background.scale(getWidth(), getHeight());
         setBackground(background);
         
