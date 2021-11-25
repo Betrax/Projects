@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=prop
+comment1.params=file_path
+comment1.target=prop(java.lang.String)
+comment2.params=
+comment2.target=void\ draw()
+numComments=3

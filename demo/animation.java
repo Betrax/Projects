@@ -14,7 +14,6 @@ public class animation
         image = new GreenfootImage(file_path + frame + ".png");
         X = image.getWidth();
         Y = image.getHeight();
-
     }
 
     public GreenfootImage draw(int x, int y, int max_frames, int milliseconds)
