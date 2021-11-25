@@ -2,10 +2,15 @@ import greenfoot.*;
 
 public class player extends Actor
 {
-    animation idle = new animation("player/idle/");
     public void act()
     {
-        setImage(idle.draw(mouse.X(),mouse.Y(), 7, 100));
+        if (mouse.mouseClicked()==true)
+        {
+            move();
+        }
+    }
+    public void move()
+    {
+        move(100);
     }
 }
-//Saad

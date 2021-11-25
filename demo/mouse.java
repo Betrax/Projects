@@ -14,6 +14,10 @@ public class mouse
     }
     public static boolean mouseClicked()
     {
+        if (Greenfoot.mouseClicked(null))
+        {
+            return true;
+        }
         return false;
     }
 }
