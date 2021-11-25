@@ -1,5 +1,6 @@
-# Projects
-Escape Room game for UGent.
+# Escape Room game voor UGent
+
+# Branches
 
 De meest up to date branch is "test", maar het bevat ook de meest onstabiele code.
 
