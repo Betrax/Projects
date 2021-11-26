@@ -13,7 +13,7 @@ public class Room1 extends BaseRoom
     public Room1(EscapeGame escapeGame)
     {
         super(escapeGame);
-        setBackground("map0.jpg"); //achtergrond 
+        setBackground("basement.png"); //achtergrond 
         //eigen objecten toevoegen
        
     }

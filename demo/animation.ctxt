@@ -2,6 +2,6 @@
 comment0.target=animation
 comment1.params=path
 comment1.target=animation(java.lang.String)
-comment2.params=x\ y\ max_frames\ milliseconds
-comment2.target=greenfoot.GreenfootImage\ draw(int,\ int,\ int,\ int)
+comment2.params=scaleX\ scaleY\ milliseconds
+comment2.target=greenfoot.GreenfootImage\ draw(int,\ int,\ int)
 numComments=3
