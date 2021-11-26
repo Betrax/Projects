@@ -3,11 +3,12 @@ import greenfoot.*;
 public class MyWorld extends World
 {
     gif background = new gif("forest.gif");
-    prop player = new prop("player/idle/");
     
     public MyWorld()
     {
         super(1200, 700, 1);
+        
+        addObject(new prop("player/run/", 100, 100, 200, 200, 100), 100, 100);
     }
     
     public void act()

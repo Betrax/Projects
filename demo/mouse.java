@@ -37,6 +37,6 @@ public class mouse
     
     public static boolean mouseClicked()
     {
-        return false;
+        return true;
     }
 }

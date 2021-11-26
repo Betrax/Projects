@@ -1,5 +1,10 @@
 import greenfoot.*;
 
+//DO NOT CHANGE THIS CLASS! JUST MESSAGE ME! -Oguz
+
+// USE `gif *WORLD* = new gif("forest.gif");` THEN `setBackground(*WORLD*.draw(scaleX, scaleY));` for backgrounds.
+// USE `gif *OBJECT* = new gif("forest.gif");` THEN `setImage(*OBJECT*.draw(scaleX, scaleY));` for anything else.
+
 public class gif
 {
     GifImage GifImage;
@@ -13,10 +18,10 @@ public class gif
         this.Y = this.GifImage.getCurrentImage().getHeight();
     }
 
-    public GreenfootImage draw(int x, int y)
+    public GreenfootImage draw(int scaleX, int scaleY)
     {
-        int wide = X * x / 100;
-        int high = Y * y / 100;
+        int wide = X * scaleX / 100;
+        int high = Y * scaleY / 100;
         GifImage.getCurrentImage().scale(wide, high);
         return GifImage.getCurrentImage();
     }
