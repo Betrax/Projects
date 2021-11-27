@@ -22,5 +22,6 @@ public class BaseRoom extends World
 
     public void NextRoom(){
         escapeGame.NextRoom();
-    }                
-}
+    }      
+
+}  

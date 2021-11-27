@@ -24,7 +24,7 @@ public class EscapeGame extends World
         room1 = new Room1(this); //geeft EscapeGame mee
         room2 = new Room2(this);
         myworld1 = new MyWorld(this);
-        SetRoom(room1);
+        SetRoom(myworld1);
 
        
     }

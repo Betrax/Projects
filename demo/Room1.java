@@ -8,19 +8,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Room1 extends BaseRoom
 {
-    
+
     public Room1(EscapeGame escapeGame)
     {
         super(escapeGame);
-        
+
         GreenfootImage background = (new GreenfootImage("basement.png"));
         background.scale(getWidth(), getHeight());
         setBackground(background);
-       
+
     }
-    
+
     public void act()
     {
-       
+
     }
+
 }
+
