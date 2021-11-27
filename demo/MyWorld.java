@@ -9,7 +9,7 @@ public class MyWorld extends BaseRoom
         super(escapeGame);
         addObject(new player(), 100, 100);
     }
-
+    
     public void act()
     {
         setBackground(background.draw(260, 260));

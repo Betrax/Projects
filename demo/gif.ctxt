@@ -2,6 +2,6 @@
 comment0.target=gif
 comment1.params=file_path
 comment1.target=gif(java.lang.String)
-comment2.params=x\ y
+comment2.params=scaleX\ scaleY
 comment2.target=greenfoot.GreenfootImage\ draw(int,\ int)
 numComments=3
