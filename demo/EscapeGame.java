@@ -50,7 +50,7 @@ public class EscapeGame extends World
        
         else
         {
-            SetRoom(room1);
+            SetRoom(myworld1);
         }
     }
 }

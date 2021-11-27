@@ -7,7 +7,8 @@ public class MyWorld extends BaseRoom
     public MyWorld(EscapeGame escapeGame)
     {
         super(escapeGame);
-        addObject(new player(), 100, 100);
+        
+        addObject(new prop("player/run/", 100, 100, 200, 200, 100), 100,100);
     }
     
     public void act()
