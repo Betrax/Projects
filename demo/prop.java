@@ -1,6 +1,6 @@
 import greenfoot.*;
 
-//DO NOT TOUCH THIS! MESSAGE ME -Oguz
+// DO NOT TOUCH THIS! MESSAGE ME -Oguz
 
 public class prop extends Actor
 {
@@ -10,9 +10,11 @@ public class prop extends Actor
     int speed; // in milliseconds.
     int locationX; // X location of the object.
     int locationY; // Y location of the object.
-    
-    
-    // Only function you should care abotu is the constructor here. Go to the world create an object with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int locationX, int locationY, int speed)`.
+    boolean object_click;
+
+    // Only function you should care abotu is the constructor here. Go to the world create an object
+    // with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int
+    // locationX, int locationY, int speed)`.
     public prop(String file_path, int scaleX, int scaleY, int locationX, int locationY, int speed)
     {
         this.animation = new animation(file_path);
@@ -22,10 +24,24 @@ public class prop extends Actor
         this.locationX = locationX;
         this.locationY = locationY;
     }
-    
+
+
+
     public void act()
     {
         setLocation(locationX, locationY);
         setImage(animation.draw(scaleX, scaleY, speed));
+        if (Greenfoot.mousePressed(this))
+        {
+            this.object_click = true;
+        }
+        else if (this.object_click == true && Greenfoot.mouseClicked(null) == false)
+        {
+            this.object_click = true;
+        }
+        else
+        {
+            this.object_click = false;
+        }
     }
 }

@@ -4,7 +4,7 @@ public class mouse
     private static int x;
     private static int x_buffer = 0;
     
-    public static int X()
+    public static int get_X()
     {
         try{
             x = Greenfoot.getMouseInfo().getX();
@@ -21,7 +21,7 @@ public class mouse
     private static int y;
     private static int y_buffer = 0;
     
-    public static int Y()
+    public static int get_Y()
     {
         try{
             y = Greenfoot.getMouseInfo().getY();
@@ -35,6 +35,8 @@ public class mouse
         return y;
     }
     
+    
+    // nog niet echt nuttig, maar het werkt
     public static boolean mouseClicked()
     {
         if (Greenfoot.mouseClicked(null))

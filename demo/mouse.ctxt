@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=mouse
 comment1.params=
-comment1.target=int\ X()
+comment1.target=int\ get_X()
 comment2.params=
-comment2.target=int\ Y()
+comment2.target=int\ get_Y()
 comment3.params=
 comment3.target=boolean\ mouseClicked()
 numComments=4
