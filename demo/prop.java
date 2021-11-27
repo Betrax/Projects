@@ -12,9 +12,9 @@ public class prop extends Actor
     int locationY; // Y location of the object.
     boolean object_click;
 
-    // Only function you should care abotu is the constructor here. Go to the world create an object
-    // with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int
-    // locationX, int locationY, int speed)`.
+    //Only function you should care about is the constructor here. 
+    //Go to the world create an object
+    //with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int locationX, int locationY, int speed)`.
     public prop(String file_path, int scaleX, int scaleY, int locationX, int locationY, int speed)
     {
         this.animation = new animation(file_path);
@@ -24,7 +24,6 @@ public class prop extends Actor
         this.locationX = locationX;
         this.locationY = locationY;
     }
-
 
 
     public void act()
