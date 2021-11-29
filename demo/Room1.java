@@ -21,5 +21,4 @@ public class Room1 extends World
             player.locationY = mouse.Y();
         }
     }
-
 }
