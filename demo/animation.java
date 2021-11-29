@@ -1,13 +1,13 @@
 import greenfoot.*;
 import java.io.*;
 
-// DO NOT TOUCH ANYTHING INSIDE HERE! JUST MESSAGE ME! -Oguz
-
 // USE `animation *WORLD* = new animation(file_path);` THEN `setBackground(*WORLD*.draw(scaleX,
 // scaleY));` for backgrounds.
 // USE `animation *OBJECT* = new animation(file_path);` THEN `setImage(*OBJECT*.draw(scaleX,
 // scaleY));` for anything else.
 
+
+// DO NOT TOUCH ANYTHING INSIDE HERE! JUST MESSAGE ME! -Oguz
 public class animation
 {
     long static_time = System.currentTimeMillis();

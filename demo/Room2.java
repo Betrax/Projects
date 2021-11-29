@@ -1,30 +1,26 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 
-/**
- * Write a description of class Room2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Room2 extends BaseRoom
+public class Room2 extends World
 {
-    private int count = 0;
-    prop placeHolder = new prop("player/roll/",500,500, 300,300,100);
-    public Room2(EscapeGame escapeGame)
+    GreenfootImage background = (new GreenfootImage("basement.png"));
+    prop player = new prop("player/run/", 500, 500, 500, 500, 100);
+    
+    public Room2()
     {
-        super(escapeGame);
-        
-        GreenfootImage background = (new GreenfootImage("banaan.jpg"));
+        super(1200, 700, 1);
         background.scale(getWidth(), getHeight());
         setBackground(background);
         
-        addObject(placeHolder, 300,300);
-        
+        addObject(player, 100, 200);
     }
-        
 
     public void act()
     {
-
+        if (player.click("tap"))
+        {
+            Greenfoot.setWorld(GOD.Room1);
+        }
     }
+
 }
+

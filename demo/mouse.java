@@ -4,7 +4,7 @@ public class mouse
     private static int x;
     private static int x_buffer = 0;
     
-    public static int get_X()
+    public static int X()
     {
         try{
             x = Greenfoot.getMouseInfo().getX();
@@ -21,7 +21,7 @@ public class mouse
     private static int y;
     private static int y_buffer = 0;
     
-    public static int get_Y()
+    public static int Y()
     {
         try{
             y = Greenfoot.getMouseInfo().getY();

@@ -1,28 +1,25 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class Room1 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Room1 extends BaseRoom
+public class Room1 extends World
 {
+    gif background = new gif("forest.gif");
+    prop player = new prop("player/knockback/", 300, 300, 300, 200, 100);
 
-    public Room1(EscapeGame escapeGame)
+    public Room1()
     {
-        super(escapeGame);
-
-        GreenfootImage background = (new GreenfootImage("basement.png"));
-        background.scale(getWidth(), getHeight());
-        setBackground(background);
-
+        super(1200, 700, 1);
+        addObject(player, 100, 500);
     }
 
     public void act()
     {
-
+        setBackground(background.draw(260, 260));
+        
+        if (player.click("hold"))
+        {
+            player.locationX = mouse.X();
+            player.locationY = mouse.Y();
+        }
     }
 
 }
-
