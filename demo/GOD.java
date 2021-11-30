@@ -9,7 +9,7 @@ public class GOD extends World
 {
     public static World Room1 = new Room1();
     public static World Room2 = new Room2();
-    
+    public static World Room3 = new Room3();
     public GOD()
     {
         super(1200, 700, 1);
