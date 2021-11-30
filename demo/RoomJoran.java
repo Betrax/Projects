@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class RoomJoran extends World
 {
-    prop door = new prop("room3.npg", 50, 150, 350, 315, 0);
+    prop door = new prop("banaan.jpg", 50, 150, 350, 315, 0);
     
     public RoomJoran()
     {
