@@ -2,6 +2,7 @@
 class.DesktopGilles.image=windows.jpg
 class.RoomGilles.image=basement.png
 class.prop.image=1.png
+<<<<<<< HEAD
 dependency1.from=start_screen
 dependency1.to=gif
 dependency1.type=UsesDependency
@@ -51,6 +52,68 @@ editor.fx.0.y=0
 height=694
 package.numDependencies=14
 package.numTargets=11
+=======
+dependency1.from=Room1
+dependency1.to=gif
+dependency1.type=UsesDependency
+dependency2.from=RoomJoran
+dependency2.to=prop
+dependency2.type=UsesDependency
+dependency3.from=RoomJoran
+dependency3.to=GOD
+dependency3.type=UsesDependency
+dependency4.from=GOD
+dependency4.to=Room1
+dependency4.type=UsesDependency
+dependency5.from=GOD
+dependency5.to=RoomJoran
+dependency5.type=UsesDependency
+<<<<<<< HEAD
+dependency6.from=RoomPlaceholder
+dependency6.to=gif
+dependency6.type=UsesDependency
+dependency7.from=prop
+dependency7.to=animation
+dependency7.type=UsesDependency
+dependency8.from=gif
+dependency8.to=GifImage
+dependency8.type=UsesDependency
+<<<<<<< HEAD
+dependency9.from=gif
+dependency9.to=GifImage
+dependency9.type=UsesDependency
+editor.fx.0.height=838
+editor.fx.0.width=1550
+editor.fx.0.x=-7
+editor.fx.0.y=-7
+height=838
+package.numDependencies=9
+package.numTargets=10
+=======
+editor.fx.0.height=826
+editor.fx.0.width=1352
+editor.fx.0.x=266
+editor.fx.0.y=99
+height=1048
+package.numDependencies=8
+package.numTargets=9
+=======
+dependency6.from=prop
+dependency6.to=animation
+dependency6.type=UsesDependency
+dependency7.from=gif
+dependency7.to=GifImage
+dependency7.type=UsesDependency
+editor.fx.0.height=737
+editor.fx.0.width=996
+editor.fx.0.x=360
+editor.fx.0.y=26
+height=830
+package.numDependencies=7
+package.numTargets=8
+>>>>>>> c63acf2aeee144140f51f87aa5e1fbb840502f9c
+>>>>>>> f34c504f2cf858db7c9b2c06d62a7827155aea5e
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -87,63 +150,110 @@ target11.width=120
 target11.x=0
 target11.y=0
 target2.height=70
+<<<<<<< HEAD
 target2.name=start_screen
+=======
+<<<<<<< HEAD
+target2.name=start_screen
+=======
+target2.name=mouse
+>>>>>>> c63acf2aeee144140f51f87aa5e1fbb840502f9c
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=120
 target2.x=0
 target2.y=0
 target3.height=70
+<<<<<<< HEAD
 target3.name=mouse
+=======
+<<<<<<< HEAD
+target3.name=mouse
+=======
+target3.name=Room1
+>>>>>>> c63acf2aeee144140f51f87aa5e1fbb840502f9c
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
 target4.height=70
+<<<<<<< HEAD
 target4.name=Room1
+=======
+target4.name=gif
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=120
 target4.x=0
 target4.y=0
 target5.height=70
+<<<<<<< HEAD
 target5.name=gif
+=======
+target5.name=prop
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=120
 target5.x=0
 target5.y=0
 target6.height=70
+<<<<<<< HEAD
 target6.name=RoomGilles
+=======
+target6.name=RoomJoran
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=120
 target6.x=0
 target6.y=0
 target7.height=70
-target7.name=prop
+target7.name=GOD
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
 target7.x=0
 target7.y=0
 target8.height=70
+<<<<<<< HEAD
 target8.name=RoomJoran
+=======
+target8.name=Room4saad
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=120
 target8.x=0
 target8.y=0
+<<<<<<< HEAD
 target9.height=70
+<<<<<<< HEAD
 target9.name=GOD
+=======
+<<<<<<< HEAD
+target9.name=animation
+=======
+target9.name=RoomPlaceholder
+>>>>>>> f34c504f2cf858db7c9b2c06d62a7827155aea5e
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
 target9.x=0
 target9.y=0
+=======
+>>>>>>> c63acf2aeee144140f51f87aa5e1fbb840502f9c
 version=3.0.0
+<<<<<<< HEAD
 width=1294
+=======
+width=1550
+>>>>>>> a704c2dffb737b79eed3db6390fe7e5f60db30a2
 world.lastInstantiated=GOD
 xPosition=0
 yPosition=0

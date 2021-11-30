@@ -7,7 +7,8 @@ import greenfoot.*;
 
 public class GOD extends World
 {
-    public static World Room1 = new Room1();
+    public static World Room4saad = new Room4saad();
+    public static World RoomPlaceholder = new RoomPlaceholder();
     public static World RoomJoran = new RoomJoran();
     public GOD()
     {
