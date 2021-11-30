@@ -2,12 +2,12 @@ import greenfoot.*;
 
 public class RoomJoran extends World
 {
-    prop door = new prop("room3/", 50, 150, 350, 315, 0);
+    prop door = new prop("room3.npg", 50, 150, 350, 315, 0);
     
     public RoomJoran()
     {
         super(1200, 700, 1);
-        GreenfootImage background = (new GreenfootImage("room3.jpg"));
+        GreenfootImage background = (new GreenfootImage("roomJoran.jpg"));
         background.scale(getWidth(), getHeight());
         setBackground(background);
         
