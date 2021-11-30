@@ -9,7 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Room4saad extends World
 {
     GreenfootImage background = (new GreenfootImage("Verlaten.jpg"));
-    prop vraag = new prop("vraag", 100, 100, 200, 100, 100);
+    prop vraag = new prop("Saad/Vraag.png", 100, 100, 200, 100, 100);
+    prop antwoord = new prop("Saad/ANTWOORD A.png", 100, 100, 200, 150, 100);
+    prop antwoordb = new prop("Saad/ANTWOORD B.png", 100, 100, 200, 200, 100);
+    prop antwoordc = new prop("Saad/ANTWOORD C.png", 100, 100, 200, 250, 100);
     public Room4saad()
     {    
         super(1200, 700, 1); 
@@ -17,6 +20,8 @@ public class Room4saad extends World
         setBackground(background);
         
         addObject(vraag, 100, 200);
-        
+        addObject(antwoord, 100, 300);
+        addObject(antwoordb, 100, 300);   
+        addObject(antwoordc, 100, 300); 
     }
 }
