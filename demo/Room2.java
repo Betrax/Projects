@@ -6,7 +6,7 @@ public class Room2 extends World
     public static prop player = new prop("player/run/", 500, 500, 500, 500, 100);
     
     
-    prop vraag = new prop("a.png", 100, 100, 200, 100, 100);
+    prop vraag = new prop("jpg_44.jpg", 100, 100, 200, 100, 100);
     
     public Room2()
     {

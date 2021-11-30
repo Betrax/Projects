@@ -33,6 +33,11 @@ public class animation
             image = new GreenfootImage(file_path);
             max_frames = 1;
         }
+        else if(file_path.contains("jpg"))
+        {
+            image = new GreenfootImage(file_path);
+            max_frames = 1;
+        }
         else // If the filepath is to a folder that contains multiple images
         {
             // idk why but java does not wants to work with greenfoot. So I had to fix the path for it
