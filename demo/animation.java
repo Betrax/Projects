@@ -28,12 +28,7 @@ public class animation
     {
         file_path = path;
         
-        if (file_path.contains("png")) // If the filepath is a directly to an image
-        {
-            image = new GreenfootImage(file_path);
-            max_frames = 1;
-        }
-        else if(file_path.contains("jpg"))
+        if (file_path.contains("png") || file_path.contains("jpg")) // If the filepath is a directly to an image
         {
             image = new GreenfootImage(file_path);
             max_frames = 1;
@@ -77,6 +72,10 @@ public class animation
         }
         else
         {
+            int wide = X * scaleX / 100;
+            int high = Y * scaleY / 100;
+            image.scale(wide, high);
+            
             return image;
         }
     }
