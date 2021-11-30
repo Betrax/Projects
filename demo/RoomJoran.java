@@ -1,26 +1,25 @@
 import greenfoot.*; 
 
-public class Room2 extends World
+public class RoomJoran extends World
 {
-    GreenfootImage background = (new GreenfootImage("basement.png"));
-    prop player = new prop("player/run/", 500, 500, 500, 500, 100);
+    prop door = new prop("room3/", 50, 150, 350, 315, 0);
     
-    public Room2()
+    public RoomJoran()
     {
         super(1200, 700, 1);
+        GreenfootImage background = (new GreenfootImage("room3.jpg"));
         background.scale(getWidth(), getHeight());
         setBackground(background);
         
-        addObject(player, 100, 200);
+        addObject(door, 100, 200);
     }
+
 
     public void act()
     {
-        if (player.click("tap"))
+         if (door.click("tap"))
         {
             Greenfoot.setWorld(GOD.Room1);
         }
     }
-
 }
-
