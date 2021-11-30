@@ -1,12 +1,12 @@
 import greenfoot.*;
 
-public class Room1 extends World
+public class start_screen extends World
 {
     gif background = new gif("forest.gif");
     
     public static prop player2 = Room2.player;
 
-    public Room1()
+    public start_screen()
     {
         super(1200, 700, 1);
         addObject(player2, 100, 500);

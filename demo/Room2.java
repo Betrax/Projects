@@ -3,7 +3,10 @@ import greenfoot.*;
 public class Room2 extends World
 {
     GreenfootImage background = (new GreenfootImage("basement.png"));
-    prop player = new prop("player/run/", 500, 500, 500, 500, 100);
+    public static prop player = new prop("player/run/", 500, 500, 500, 500, 100);
+    
+    
+    prop vraag = new prop("a.png", 100, 100, 200, 100, 100);
     
     public Room2()
     {
@@ -12,6 +15,8 @@ public class Room2 extends World
         setBackground(background);
         
         addObject(player, 100, 200);
+        
+        addObject(vraag, 100, 200);
     }
 
     public void act()
