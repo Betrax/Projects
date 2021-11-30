@@ -1,10 +1,10 @@
 import greenfoot.*;
 
-public class start_screen extends World
+public class RoomPlaceholder extends World
 {
     gif background = new gif("forest.gif");
 
-    public start_screen()
+    public RoomPlaceholder()
     {
         super(1200, 700, 1);
     }
@@ -13,5 +13,4 @@ public class start_screen extends World
     {
         setBackground(background.draw(260, 260));
     }
-
 }

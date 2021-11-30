@@ -19,7 +19,7 @@ public class RoomJoran extends World
     {
          if (door.click("tap"))
         {
-            Greenfoot.setWorld(GOD.Room1);
+            Greenfoot.setWorld(GOD.RoomPlaceholder);
         }
     }
 }

@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=Room1
+comment0.target=RoomPlaceholder
 comment1.params=
-comment1.target=Room1()
+comment1.target=RoomPlaceholder()
 comment2.params=
 comment2.target=void\ act()
 numComments=3
