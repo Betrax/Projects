@@ -8,11 +8,10 @@ import greenfoot.*;
 public class GOD extends World
 {
     public static World Room1 = new Room1();
-    public static World Room2 = new Room2();
-    public static World Room3 = new Room3();
+    public static World RoomJoran = new RoomJoran();
     public GOD()
     {
         super(1200, 700, 1);
-        Greenfoot.setWorld(Room2); // changes the room to the cooresponding room that is given as an argument. Use the same function with different rooms to switch between them.
+        Greenfoot.setWorld(RoomJoran); // changes the room to the cooresponding room that is given as an argument. Use the same function with different rooms to switch between them.
     }
 }
