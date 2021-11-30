@@ -18,7 +18,6 @@ public class prop extends Actor
     int locationX; // X location of the object.
     int locationY; // Y location of the object.
     boolean click = false;
-
     // Only function you should care about is the constructor here.
     // Go to the world create an object
     // with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int
@@ -37,10 +36,8 @@ public class prop extends Actor
     public void act()
     {
         setLocation(locationX, locationY);
+        
         setImage(animation.draw(scaleX, scaleY, speed));
-
-
-
     }
 
     boolean hold;
