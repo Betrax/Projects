@@ -9,7 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Room4saad extends World
 {
     GreenfootImage background = (new GreenfootImage("Verlaten.jpg"));
+    
     prop vraag = new prop("vraag", 100, 100, 200, 100, 100);
+    
     public Room4saad()
     {    
         super(1200, 700, 1); 
