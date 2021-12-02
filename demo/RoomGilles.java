@@ -20,11 +20,12 @@ public class RoomGilles extends World
         
         addObject(desk, getWidth()/2, getHeight()/2 + 100);
     }
+    
     public void act()
     {
          if (desk.click("tap"))
         {
-            Greenfoot.setWorld(GOD.DesktopGilles);
+            Greenfoot.setWorld(DesktopGilles.DesktopGilles);
         }
     }
     
