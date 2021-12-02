@@ -3,7 +3,7 @@ import greenfoot.*;
 public class RoomJoran extends World
 {
     public static World RoomJoran = new RoomJoran();
-    prop door = new prop("roomJoran/trans1.png", 50, 150, 350, 315, 0);
+    prop door = new prop("roomJoran/realtrans.png", 12, 50, 350, 315, 0);
     
     public RoomJoran()
     {
