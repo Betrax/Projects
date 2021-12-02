@@ -37,6 +37,7 @@ public class animation
         }
         else // If the filepath is to a folder that contains multiple images
         {
+            
             // idk why but java does not wants to work with greenfoot. So I had to fix the path for
             // it
             java_file_path = (System.getProperty("user.dir") + "/images/" + file_path)
@@ -46,7 +47,7 @@ public class animation
             try
             {
                 image = new GreenfootImage(file_path + frame + ".png");
-            }catch (Exception NoClassDefFoundError)
+            }catch (Exception e)
             {
                 image = new GreenfootImage(file_path + "x (" + frame + ").png");
             }
