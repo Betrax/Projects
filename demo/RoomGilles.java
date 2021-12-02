@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class RoomGilles extends World
 {
-
+    public static World RoomGilles = new RoomGilles();
     prop desk = new prop("desk.png", 200, 200, getWidth()/2, getHeight()/2 + 100, 0);
     
     public RoomGilles()
@@ -20,11 +20,12 @@ public class RoomGilles extends World
         
         addObject(desk, getWidth()/2, getHeight()/2 + 100);
     }
+    
     public void act()
     {
          if (desk.click("tap"))
         {
-            Greenfoot.setWorld(GOD.DesktopGilles);
+            Greenfoot.setWorld(DesktopGilles.DesktopGilles);
         }
     }
     
