@@ -13,7 +13,7 @@ public class GOD extends World
     public GOD()
     {
         super(1200, 700, 1);
-        Greenfoot.setWorld(start_screen.start_screen); // changes the room to the cooresponding room
+        Greenfoot.setWorld(Room4saad.Room4saad); // changes the room to the cooresponding room
                                                        // that is given as an argument. Use the same
                                                        // function with different rooms to switch
                                                        // between them.

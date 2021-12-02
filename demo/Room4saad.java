@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Room4saad extends World
 {
     public static World Room4saad = new Room4saad();
-    GreenfootImage background = (new GreenfootImage("Verlaten.jpg"));
+    GreenfootImage background = (new GreenfootImage("Saad/Verlatenn.gif"));
     
     prop licht = new prop("Saad/trans1.png", 25, 25, 600, 325, 0);
     
@@ -42,8 +42,19 @@ public class Room4saad extends World
         addObject(antwoordd, 100, 300); 
         }
     }
+    {if (antwoord.click("tap"))
+       Greenfoot.stop();     }
+       
+     {if (antwoordb.click("tap"))
+       Greenfoot.stop();     }
+       
+     {if (antwoordc.click("tap"))
+       Greenfoot.stop();     }
+       
+     {if (antwoordd.click("tap"))
+       Greenfoot.stop();     }
+       
 }
 }
-
 
 
