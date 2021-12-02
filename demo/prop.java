@@ -20,14 +20,24 @@ public class prop extends Actor
     int locationX; // X location of the object.
     int locationY; // Y location of the object.
     boolean click = false;
-
+    gif gif;
+    String path;
     // Only function you should care about is the constructor here.
     // Go to the world create an object
     // with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int
     // locationX, int locationY, int speed)`.
     public prop(String file_path, int scaleX, int scaleY, int locationX, int locationY, int speed)
     {
-        this.animation = new animation(file_path);
+        this.path = file_path;
+        if (file_path.contains(".gif"))
+        {
+            this.gif = new gif(path);
+        }
+        else
+        {
+            this.animation = new animation(path);
+        }
+        
         this.scaleX = scaleX;
         this.scaleY = scaleY;
         this.speed = speed;
@@ -39,8 +49,14 @@ public class prop extends Actor
     public void act()
     {
         setLocation(locationX, locationY);
-
-        setImage(animation.draw(scaleX, scaleY, speed));
+        if (path.contains(".gif"))
+        {
+            setImage(gif.draw(scaleX, scaleY));
+        }
+        else
+        {
+            setImage(animation.draw(scaleX, scaleY, speed));
+        }
     }
 
     boolean hold;
