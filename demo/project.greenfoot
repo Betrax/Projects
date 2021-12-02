@@ -18,15 +18,23 @@ dependency12.type=UsesDependency
 dependency13.from=Room4saad
 dependency13.to=prop
 dependency13.type=UsesDependency
+<<<<<<< HEAD
 dependency14.from=DesktopGilles
 dependency14.to=prop
+=======
+dependency14.from=prop
+dependency14.to=gif
+>>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
 dependency14.type=UsesDependency
 dependency15.from=prop
 dependency15.to=animation
 dependency15.type=UsesDependency
+<<<<<<< HEAD
 dependency16.from=gif
 dependency16.to=GifImage
 dependency16.type=UsesDependency
+=======
+>>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
 dependency2.from=Room1Oguz
 dependency2.to=animation
 dependency2.type=UsesDependency
@@ -51,6 +59,7 @@ dependency8.type=UsesDependency
 dependency9.from=RoomJoran
 dependency9.to=RoomPlaceholder
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=830
 editor.fx.0.width=1550
 editor.fx.0.x=-7
@@ -58,6 +67,15 @@ editor.fx.0.y=-7
 height=830
 package.numDependencies=16
 package.numTargets=14
+=======
+editor.fx.0.height=838
+editor.fx.0.width=1550
+editor.fx.0.x=-7
+editor.fx.0.y=-7
+height=838
+package.numDependencies=15
+package.numTargets=13
+>>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
