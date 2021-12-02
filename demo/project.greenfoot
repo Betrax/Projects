@@ -1,10 +1,14 @@
 #Greenfoot project file
 class.RoomRobin.image=roomRobin.jpg
+class.DesktopGilles.image=windows.jpg
+class.DesktopJoran.image=windows.jpg
+class.RoomGilles.image=basement.png
 class.prop.image=1.png
 dependency1.from=Room1Oguz
 dependency1.to=prop
 dependency1.type=UsesDependency
 dependency10.from=RoomJoran
+<<<<<<< HEAD
 dependency10.to=RoomPlaceholder
 dependency10.type=UsesDependency
 dependency11.from=GOD
@@ -22,6 +26,36 @@ dependency14.type=UsesDependency
 dependency15.from=gif
 dependency15.to=GifImage
 dependency15.type=UsesDependency
+=======
+dependency10.to=DesktopJoran
+dependency10.type=UsesDependency
+dependency11.from=DesktopJoran
+dependency11.to=prop
+dependency11.type=UsesDependency
+dependency12.from=GOD
+dependency12.to=RoomJoran
+dependency12.type=UsesDependency
+dependency13.from=Room4saad
+dependency13.to=prop
+dependency13.type=UsesDependency
+<<<<<<< HEAD
+dependency14.from=DesktopGilles
+dependency14.to=prop
+=======
+dependency14.from=prop
+dependency14.to=gif
+>>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
+dependency14.type=UsesDependency
+dependency15.from=prop
+dependency15.to=animation
+dependency15.type=UsesDependency
+<<<<<<< HEAD
+dependency16.from=gif
+dependency16.to=GifImage
+dependency16.type=UsesDependency
+=======
+>>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
+>>>>>>> 249e4bb3a81a2bc45c639317d3fcdc017398a0e9
 dependency2.from=Room1Oguz
 dependency2.to=animation
 dependency2.type=UsesDependency
@@ -46,13 +80,27 @@ dependency8.type=UsesDependency
 dependency9.from=RoomJoran
 dependency9.to=prop
 dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=830
+editor.fx.0.width=1550
+editor.fx.0.x=-7
+editor.fx.0.y=-7
+height=830
+package.numDependencies=16
+package.numTargets=14
+=======
 editor.fx.0.height=838
 editor.fx.0.width=1550
 editor.fx.0.x=-7
 editor.fx.0.y=-7
 height=838
 package.numDependencies=15
+<<<<<<< HEAD
 package.numTargets=14
+=======
+package.numTargets=13
+>>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
+>>>>>>> 249e4bb3a81a2bc45c639317d3fcdc017398a0e9
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -66,7 +114,7 @@ readme.name=@README
 readme.width=49
 readme.x=10
 readme.y=10
-simulation.speed=100
+simulation.speed=56
 target1.height=70
 target1.name=gif
 target1.showInterface=false
@@ -82,7 +130,11 @@ target10.width=120
 target10.x=0
 target10.y=0
 target11.height=70
+<<<<<<< HEAD
 target11.name=RoomJoran
+=======
+target11.name=DesktopJoran
+>>>>>>> 249e4bb3a81a2bc45c639317d3fcdc017398a0e9
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=120
@@ -167,6 +219,6 @@ target9.x=0
 target9.y=0
 version=3.0.0
 width=1550
-world.lastInstantiated=GOD
+world.lastInstantiated=RoomJoran
 xPosition=0
 yPosition=0
