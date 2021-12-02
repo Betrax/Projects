@@ -24,7 +24,7 @@ public class RoomGilles extends World
     {
          if (desk.click("tap"))
         {
-            Greenfoot.setWorld(GOD.Room1);
+            Greenfoot.setWorld(GOD.DesktopGilles);
         }
     }
     
