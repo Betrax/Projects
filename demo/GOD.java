@@ -9,7 +9,6 @@ import greenfoot.*;
 
 public class GOD extends World
 {
-    public static World Room4saad = new Room4saad();
 
     public GOD()
     {
