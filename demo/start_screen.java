@@ -24,13 +24,14 @@ public class start_screen extends World
 
     public void act()
     {
-        backgroundMusic.playLoop();
+        //backgroundMusic.playLoop();
         if (start.click("tap"))
         {
             Greenfoot.setWorld(Room1Oguz.Room1Oguz);
         }
         else if (credits.click("tap"))
         {
+            
         }
         else if (exit.click("tap"))
         {
