@@ -1,6 +1,4 @@
 #Greenfoot project file
-class.DesktopGilles.image=windows.jpg
-class.RoomGilles.image=basement.png
 class.prop.image=1.png
 dependency1.from=Room1Oguz
 dependency1.to=prop
@@ -17,12 +15,18 @@ dependency12.type=UsesDependency
 dependency13.from=prop
 dependency13.to=animation
 dependency13.type=UsesDependency
+<<<<<<< HEAD
 dependency14.from=prop
 dependency14.to=gif
 dependency14.type=UsesDependency
 dependency15.from=gif
 dependency15.to=GifImage
 dependency15.type=UsesDependency
+=======
+dependency14.from=gif
+dependency14.to=GifImage
+dependency14.type=UsesDependency
+>>>>>>> ea3623f2353cd8dca064229c26e4897125a31b98
 dependency2.from=Room1Oguz
 dependency2.to=animation
 dependency2.type=UsesDependency
@@ -47,12 +51,17 @@ dependency8.type=UsesDependency
 dependency9.from=RoomJoran
 dependency9.to=RoomPlaceholder
 dependency9.type=UsesDependency
-editor.fx.0.height=830
+editor.fx.0.height=838
 editor.fx.0.width=1550
 editor.fx.0.x=-7
 editor.fx.0.y=-7
+<<<<<<< HEAD
 height=830
 package.numDependencies=15
+=======
+height=838
+package.numDependencies=14
+>>>>>>> ea3623f2353cd8dca064229c26e4897125a31b98
 package.numTargets=13
 project.charset=UTF-8
 publish.hasSource=false
