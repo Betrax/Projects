@@ -1,10 +1,9 @@
 import greenfoot.*;
+// USE `gif *WORLD* = new gif(*"path"*);` THEN `setBackground(*WORLD*.draw(scaleX, scaleY));` for backgrounds.
+// USE `gif *OBJECT* = new gif(*"path"*);` THEN `setImage(*OBJECT*.draw(scaleX, scaleY));` for anything else.
+
 
 //DO NOT CHANGE THIS CLASS! JUST MESSAGE ME! -Oguz
-
-// USE `gif *WORLD* = new gif("forest.gif");` THEN `setBackground(*WORLD*.draw(scaleX, scaleY));` for backgrounds.
-// USE `gif *OBJECT* = new gif("forest.gif");` THEN `setImage(*OBJECT*.draw(scaleX, scaleY));` for anything else.
-
 public class gif
 {
     GifImage GifImage;
