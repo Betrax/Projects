@@ -2,6 +2,7 @@ import greenfoot.*;
 
 public class RoomJoran extends World
 {
+    public static World RoomJoran = new RoomJoran();
     prop door = new prop("roomJoran/trans1.png", 50, 150, 350, 315, 0);
     
     public RoomJoran()
@@ -18,7 +19,7 @@ public class RoomJoran extends World
     {
          if (door.click("tap"))
         {
-            Greenfoot.setWorld(GOD.RoomPlaceholder);
+            Greenfoot.setWorld(RoomPlaceholder.RoomPlaceholder);
         }
     }
 }
