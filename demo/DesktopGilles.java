@@ -10,7 +10,6 @@ public class DesktopGilles extends World
 {
     public static World DesktopGilles = new DesktopGilles();
     prop chrome = new prop("chrome.jpg", 80, 80, 10, 10, 0);
-    
     public DesktopGilles()
     {    
         super(710, 444, 1); 

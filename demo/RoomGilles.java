@@ -18,6 +18,7 @@ public class RoomGilles extends World
         addObject(nota, 900, 150);
     }
     boolean switch1 = true;
+    
     public void act()
     {
         if (desk.click("tap"))
