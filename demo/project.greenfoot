@@ -12,29 +12,27 @@ dependency10.type=UsesDependency
 dependency11.from=DesktopJoran
 dependency11.to=prop
 dependency11.type=UsesDependency
-dependency12.from=GOD
+dependency12.from=DesktopJoran
 dependency12.to=RoomJoran
 dependency12.type=UsesDependency
-dependency13.from=Room4saad
-dependency13.to=prop
+dependency13.from=GOD
+dependency13.to=RoomJoran
 dependency13.type=UsesDependency
-<<<<<<< HEAD
-dependency14.from=DesktopGilles
+dependency14.from=Room4saad
 dependency14.to=prop
-=======
-dependency14.from=prop
-dependency14.to=gif
->>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
 dependency14.type=UsesDependency
-dependency15.from=prop
-dependency15.to=animation
+dependency15.from=DesktopGilles
+dependency15.to=prop
 dependency15.type=UsesDependency
-<<<<<<< HEAD
-dependency16.from=gif
-dependency16.to=GifImage
+dependency16.from=prop
+dependency16.to=animation
 dependency16.type=UsesDependency
-=======
->>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
+dependency17.from=prop
+dependency17.to=gif
+dependency17.type=UsesDependency
+dependency18.from=gif
+dependency18.to=GifImage
+dependency18.type=UsesDependency
 dependency2.from=Room1Oguz
 dependency2.to=animation
 dependency2.type=UsesDependency
@@ -59,23 +57,13 @@ dependency8.type=UsesDependency
 dependency9.from=RoomJoran
 dependency9.to=RoomPlaceholder
 dependency9.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=830
-editor.fx.0.width=1550
-editor.fx.0.x=-7
-editor.fx.0.y=-7
-height=830
-package.numDependencies=16
-package.numTargets=14
-=======
-editor.fx.0.height=838
-editor.fx.0.width=1550
-editor.fx.0.x=-7
-editor.fx.0.y=-7
+editor.fx.0.height=737
+editor.fx.0.width=814
+editor.fx.0.x=360
+editor.fx.0.y=26
 height=838
-package.numDependencies=15
-package.numTargets=13
->>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
+package.numDependencies=18
+package.numTargets=14
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -89,7 +77,7 @@ readme.name=@README
 readme.width=49
 readme.x=10
 readme.y=10
-simulation.speed=56
+simulation.speed=100
 target1.height=70
 target1.name=gif
 target1.showInterface=false
