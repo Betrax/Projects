@@ -11,7 +11,7 @@ public class DesktopJoran extends World
     public static World DesktopJoran = new DesktopJoran();
     prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);
     prop win =  new prop ("RoomJoran/win.jpg", 10000, 100000, 100, 100, 0);   
-    boolean switch1 = false;
+    
     public DesktopJoran()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -27,20 +27,20 @@ public class DesktopJoran extends World
         guessgame();
     }
     
-        String guess = "";
+        String guess = "" ;
         String answer = "Updaten";
         int guess_count = 0; 
         boolean out_of_guesses[] = {true, true, true, true, true, true};
        
     public void guessgame()
     {
-        if (out_of_guesses[0] == true)
+          if (out_of_guesses[0] == true)
          {
-            while ((guess!= answer) && out_of_guesses[1])
+            while ((guess!= answer) && out_of_guesses[1] == true)
              {
                 if (guess_count < 3)
                  {
-                     guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? ");
+                     String guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? ");
                      guess_count ++;
                  }
                 else
@@ -51,10 +51,9 @@ public class DesktopJoran extends World
                 }
             if (guess == answer)
             {
-                Greenfoot.stop();
-                
+                Greenfoot.setWorld(RoomJoran.RoomJoran);
             }
-            }
+        }
             
         if (out_of_guesses[1] == false)
             {
@@ -109,9 +108,13 @@ public class DesktopJoran extends World
             }
         }
     }
-}
+    }
+
+
+
+     
+       
     
-             
                                  
         
     
