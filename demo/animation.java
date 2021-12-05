@@ -12,7 +12,7 @@ import java.io.*;
 // Ex: (player/idle/idle.png)
 
 
-// DO NOT TOUCH ANYTHING INSIDE HERE! JUST MESSAGE ME! -Oguz
+// Don't change anything without me -Oguz
 public class animation
 {
     long static_time = System.currentTimeMillis();
