@@ -7,14 +7,8 @@ class.prop.image=1.png
 dependency1.from=Room1Oguz
 dependency1.to=prop
 dependency1.type=UsesDependency
-<<<<<<< HEAD
-dependency10.from=GOD
-dependency10.to=start_screen
-dependency10.to=Room4saad
-=======
 dependency10.from=RoomJoran
 dependency10.to=RoomPlaceholder
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
 dependency10.type=UsesDependency
 dependency11.from=RoomJoran
 dependency11.to=DesktopJoran
@@ -22,89 +16,35 @@ dependency11.type=UsesDependency
 dependency12.from=DesktopJoran
 dependency12.to=prop
 dependency12.type=UsesDependency
-dependency13.from=GOD
+dependency13.from=DesktopJoran
 dependency13.to=RoomJoran
 dependency13.type=UsesDependency
-<<<<<<< HEAD
-dependency14.from=Room4saad
-dependency14.to=prop
+dependency14.from=GOD
+dependency14.to=start_screen
 dependency14.type=UsesDependency
-dependency15.from=DesktopGilles
+dependency15.from=Room4saad
 dependency15.to=prop
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-dependency14.from=gif
-dependency14.to=GifImage
-dependency14.type=UsesDependency
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
-dependency14.from=prop
-dependency14.to=animation
-dependency14.type=UsesDependency
-dependency15.from=gif
-dependency15.to=GifImage
 dependency15.type=UsesDependency
-=======
-dependency10.to=DesktopJoran
-dependency10.type=UsesDependency
-dependency11.from=DesktopJoran
-dependency11.to=prop
-dependency11.type=UsesDependency
-dependency12.from=DesktopJoran
-dependency12.to=RoomJoran
-dependency12.type=UsesDependency
-dependency13.from=GOD
-dependency13.to=RoomJoran
-dependency13.type=UsesDependency
-dependency14.from=Room4saad
-dependency14.to=prop
-dependency14.type=UsesDependency
-<<<<<<< HEAD
-dependency15.from=DesktopGilles
-dependency15.to=prop
-=======
-<<<<<<< HEAD
->>>>>>> ea3623f2353cd8dca064229c26e4897125a31b98
->>>>>>> 89740160d92fd6d4d175ebf863e79b34b1e3aa93
-=======
-dependency15.from=prop
-dependency15.to=animation
->>>>>>> c48a99a92cabf21bee057c7e2dd7010054488feb
->>>>>>> 2627187421eec0ff53f34ed760081120b3bce3c8
-dependency15.type=UsesDependency
-dependency16.from=prop
-dependency16.to=animation
+dependency16.from=DesktopGilles
+dependency16.to=prop
 dependency16.type=UsesDependency
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 2627187421eec0ff53f34ed760081120b3bce3c8
 dependency17.from=prop
-dependency17.to=gif
+dependency17.to=animation
 dependency17.type=UsesDependency
-dependency18.from=gif
-dependency18.to=GifImage
+dependency18.from=prop
+dependency18.to=gif
 dependency18.type=UsesDependency
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
->>>>>>> 249e4bb3a81a2bc45c639317d3fcdc017398a0e9
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
->>>>>>> c48a99a92cabf21bee057c7e2dd7010054488feb
->>>>>>> 2627187421eec0ff53f34ed760081120b3bce3c8
-dependency2.from=Room1Oguz
-dependency2.to=animation
+dependency19.from=gif
+dependency19.to=GifImage
+dependency19.type=UsesDependency
+dependency2.from=RoomPlaceholder
+dependency2.to=gif
 dependency2.type=UsesDependency
-dependency3.from=RoomPlaceholder
-dependency3.to=gif
+dependency3.from=start_screen
+dependency3.to=prop
 dependency3.type=UsesDependency
 dependency4.from=start_screen
-dependency4.to=prop
+dependency4.to=time
 dependency4.type=UsesDependency
 dependency5.from=start_screen
 dependency5.to=Room1Oguz
@@ -121,66 +61,13 @@ dependency8.type=UsesDependency
 dependency9.from=RoomJoran
 dependency9.to=prop
 dependency9.type=UsesDependency
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-editor.fx.0.height=737
-editor.fx.0.width=814
-editor.fx.0.x=360
-editor.fx.0.y=26
-height=838
-package.numDependencies=18
-package.numTargets=14
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=694
-package.numDependencies=14
-=======
-editor.fx.0.height=838
-editor.fx.0.width=782
-editor.fx.0.x=760
-editor.fx.0.y=-7
-=======
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
-<<<<<<< HEAD
-editor.fx.0.height=830
-editor.fx.0.width=1550
-editor.fx.0.x=-7
-editor.fx.0.y=-7
-height=830
-package.numDependencies=16
-package.numTargets=14
-=======
->>>>>>> 2627187421eec0ff53f34ed760081120b3bce3c8
-editor.fx.0.height=838
-editor.fx.0.width=1550
-editor.fx.0.x=-7
-editor.fx.0.y=-7
-height=838
-<<<<<<< HEAD
-package.numDependencies=18
-package.numTargets=15
-=======
-<<<<<<< HEAD
-package.numDependencies=14
->>>>>>> ea3623f2353cd8dca064229c26e4897125a31b98
->>>>>>> 89740160d92fd6d4d175ebf863e79b34b1e3aa93
-=======
-package.numDependencies=15
-<<<<<<< HEAD
-package.numTargets=14
-=======
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
-package.numTargets=13
->>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
->>>>>>> 249e4bb3a81a2bc45c639317d3fcdc017398a0e9
->>>>>>> c48a99a92cabf21bee057c7e2dd7010054488feb
->>>>>>> 2627187421eec0ff53f34ed760081120b3bce3c8
+editor.fx.0.height=828
+editor.fx.0.width=1548
+editor.fx.0.x=-6
+editor.fx.0.y=-6
+height=1036
+package.numDependencies=19
+package.numTargets=16
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -191,7 +78,7 @@ publish.title=test
 publish.url=
 readme.height=60
 readme.name=@README
-readme.width=48
+readme.width=49
 readme.x=10
 readme.y=10
 simulation.speed=100
@@ -224,26 +111,33 @@ target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
-target13.name=GOD
+target13.name=time
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
-target14.name=Room4saad
+target14.name=GOD
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
-target15.name=DesktopGilles
+target15.name=Room4saad
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
 target15.x=0
 target15.y=0
+target16.height=70
+target16.name=DesktopGilles
+target16.showInterface=false
+target16.type=ClassTarget
+target16.width=120
+target16.x=0
+target16.y=0
 target2.height=70
 target2.name=Room1Oguz
 target2.showInterface=false
@@ -301,16 +195,7 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
-<<<<<<< HEAD
-width=1294
-world.lastInstantiated=RoomGilles
-=======
-width=1550
-<<<<<<< HEAD
-world.lastInstantiated=GOD
-=======
-world.lastInstantiated=RoomJoran
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
->>>>>>> 2627187421eec0ff53f34ed760081120b3bce3c8
+width=1936
+world.lastInstantiated=start_screen
 xPosition=0
 yPosition=0

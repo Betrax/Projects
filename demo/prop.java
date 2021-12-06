@@ -92,10 +92,12 @@ public class prop extends Actor
 
         return false;
     }
-
-    // Greenfoot is a terrible game engine, sometimes it just gets confused when the user clicks to change worlds. I think it is due to it's lineai
-    public void click_killswitch()
+    
+    
+    // checks if your prop is touching another prop.
+    // Use it in act(){}, like this: if(MYPROP.touching()){}
+    public boolean touching()
     {
-        this.click = false;
+       return isTouching(prop.class);
     }
 }
