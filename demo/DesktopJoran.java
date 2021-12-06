@@ -13,15 +13,17 @@ public class DesktopJoran extends World
     int y;
     long static_time = System.currentTimeMillis();
     prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);   
-    prop virus1 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop virus2 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop virus3 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop virus4 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop virus5 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop virus6 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop virus7 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop virus8 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop needle = new prop ("RoomJoran/norton.png", 8, 8, x, y, 0);
+   
+    prop norton = new prop ("RoomJoran/norton.png", 8, 8, x, y, 0);
+    
+    prop virussen [] = {new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0)};
     
     public DesktopJoran()
     {    
@@ -29,20 +31,25 @@ public class DesktopJoran extends World
         super(1200, 700, 1); 
         
         
-        addObject(virus1, 100, 100);
-        addObject(virus2, 100, 100);
-        addObject(virus3, 100, 100);
-        addObject(virus4, 100, 100);
-        addObject(virus5, 100, 100);
-        addObject(virus6, 100, 100);
-        addObject(virus7, 100, 100);
-        addObject(virus8, 100, 100);
-        addObject(needle, x, y);
+        addObject(virussen[0], 100, 100);
+        addObject(virussen[1], 100, 100);
+        addObject(virussen[2], 100, 100);
+        addObject(virussen[3], 100, 100);
+        addObject(virussen[4], 100, 100);
+        addObject(virussen[5], 100, 100);
+        addObject(virussen[6], 100, 100);
+        addObject(virussen[7], 100, 100);
+        addObject(norton, x, y);
     }
     
     public void act()
     {
         move();
+        if (norton.touching())
+        {
+            removeObject(virussen[0]);
+            
+        }
     }
     
     public void move()
@@ -50,25 +57,25 @@ public class DesktopJoran extends World
         if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("up"))
         {
              static_time = System.currentTimeMillis();
-             needle.locationY -= 10;
+             norton.locationY -= 10;
         }
         if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("left"))
         {
              static_time = System.currentTimeMillis();
-             needle.locationX -= 10;
+             norton.locationX -= 10;
         }
         if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("down"))
         {
              static_time = System.currentTimeMillis();
-             needle.locationY += 10;
+             norton.locationY += 10;
         }
         if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("right"))
         {
              static_time = System.currentTimeMillis();
-             needle.locationX += 10;
+             norton.locationX += 10;
         }
-        
     }
+    
     }
 
 
