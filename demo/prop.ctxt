@@ -7,5 +7,5 @@ comment2.target=void\ act()
 comment3.params=soort_click
 comment3.target=boolean\ click(java.lang.String)
 comment4.params=
-comment4.target=void\ click_killswitch()
+comment4.target=boolean\ touching()
 numComments=5

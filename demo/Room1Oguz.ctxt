@@ -8,4 +8,6 @@ comment3.params=
 comment3.target=void\ screen()
 comment4.params=
 comment4.target=void\ background()
-numComments=5
+comment5.params=path
+comment5.target=void\ bgchange(java.lang.String)
+numComments=6
