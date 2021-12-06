@@ -9,103 +9,47 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class DesktopJoran extends World
 {
     public static World DesktopJoran = new DesktopJoran();
-    prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);
-    prop win =  new prop ("RoomJoran/win.jpg", 10000, 100000, 100, 100, 0);   
+    int x;
+    int y;
+    prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);   
+    prop virus1 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
+    prop virus2 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
+    prop virus3 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
+    prop virus4 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
+    prop virus5 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
+    prop virus6 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
+    prop virus7 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
+    prop virus8 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
+    prop needle = new prop ("RoomJoran/needle.png", 8, 8, x, y, 0);
     
     public DesktopJoran()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 700, 1); 
         
-        
         addObject(background, 100, 100);
+        addObject(virus1, 100, 100);
+        addObject(virus2, 100, 100);
+        addObject(virus3, 100, 100);
+        addObject(virus4, 100, 100);
+        addObject(virus5, 100, 100);
+        addObject(virus6, 100, 100);
+        addObject(virus7, 100, 100);
+        addObject(virus8, 100, 100);
+        addObject(needle, x, y);
     }
     
     
     public void act()
     {
-        guessgame();
+        move();
     }
-    
-        String guess = "" ;
-        String answer = "Updaten";
-        int guess_count = 0; 
-        boolean out_of_guesses[] = {true, true, true, true, true, true};
-       
-    public void guessgame()
-    {
-          if (out_of_guesses[0] == true)
-         {
-            while ((guess!= answer) && out_of_guesses[1] == true)
-             {
-                if (guess_count < 3)
-                 {
-                     String guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? ");
-                     guess_count ++;
-                 }
-                else
-                 {
-                     out_of_guesses[0] = false;
-                     out_of_guesses[1] = false;
-                 }
-                }
-            if (guess == answer)
-            {
-                Greenfoot.setWorld(RoomJoran.RoomJoran);
-            }
-        }
-            
-        if (out_of_guesses[1] == false)
-            {
-            while ((guess!= answer) && out_of_guesses[2])
-             {
-                if (guess_count < 6)
-                 {
-                     guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? \n Tip 1: Het inorde houden van apllicaties  " );
-                     guess_count ++;
-                 }
-                else 
-                 {
-                     out_of_guesses[2] = false;
-                 }
-                }
-            if (guess == answer)
-                 {
-                     addObject(win, 100, 100);
-                 }
-                }
-                
-                 if (out_of_guesses[2] == false)
-         {
-            while ((guess!= answer) && out_of_guesses[3])
-             {
-                if (guess_count < 9)
-                 {
-                     guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? \n Tip 1: Het inorde houden van apllicaties \n Tip 2: De eerste letter is U. ");
-                     guess_count ++;
-                 }
-                else 
-                 {
-                     out_of_guesses[3] = false;
-                 }
-                }
-            if (guess == answer) 
-                 {
-                     addObject(win, 100, 100);
-                 }
-        }
-        
-        if (out_of_guesses[3] == false)
+
+    public void move()
+    {   
+        if (needle.click("hold"))
         {
-            while (guess!= answer)
-            {
-                guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? \n Tip 1: Het inorde houden van apllicaties \n Tip 2: De eerste letter is U.\n Tip 3: De tweede letter is P:");
-            }
-            if (guess == answer)
-            {
-                addObject(win, 100, 100);
-                Greenfoot.stop();
-            }
+             x = Greenfoot.getMouseInfo().getX();
         }
     }
     }
