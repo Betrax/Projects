@@ -1,84 +1,61 @@
 #Greenfoot project file
-class.RoomRobin.image=roomRobin.jpg
 class.DesktopGilles.image=windows.jpg
 class.DesktopJoran.image=windows.jpg
 class.RoomGilles.image=basement.png
+class.RoomRobin.image=roomRobin.jpg
+class.RouterGilles.image=router_zoom.png
 class.prop.image=1.png
 dependency1.from=Room1Oguz
 dependency1.to=prop
 dependency1.type=UsesDependency
-<<<<<<< HEAD
-dependency10.from=GOD
-dependency10.to=start_screen
-dependency10.to=Room4saad
-=======
-dependency10.from=RoomJoran
-<<<<<<< HEAD
-dependency10.to=RoomPlaceholder
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
+dependency10.from=RoomRobin
+dependency10.to=prop
 dependency10.type=UsesDependency
-dependency11.from=GOD
-dependency11.to=start_screen
-dependency11.type=UsesDependency
-dependency12.from=Room4saad
-dependency12.to=prop
-dependency12.type=UsesDependency
-dependency13.from=DesktopGilles
-dependency13.to=prop
-dependency13.type=UsesDependency
-<<<<<<< HEAD
-<<<<<<< HEAD
-dependency14.from=gif
-dependency14.to=GifImage
-dependency14.type=UsesDependency
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
-dependency14.from=prop
-dependency14.to=animation
-dependency14.type=UsesDependency
-dependency15.from=gif
-dependency15.to=GifImage
-dependency15.type=UsesDependency
-=======
-dependency10.to=DesktopJoran
-dependency10.type=UsesDependency
-dependency11.from=DesktopJoran
+dependency11.from=RoomJoran
 dependency11.to=prop
 dependency11.type=UsesDependency
-dependency12.from=GOD
-dependency12.to=RoomJoran
+dependency12.from=RoomJoran
+dependency12.to=RoomPlaceholder
 dependency12.type=UsesDependency
-dependency13.from=Room4saad
-dependency13.to=prop
+dependency13.from=RoomJoran
+dependency13.to=DesktopJoran
 dependency13.type=UsesDependency
-<<<<<<< HEAD
-dependency14.from=DesktopGilles
+dependency14.from=DesktopJoran
 dependency14.to=prop
-=======
-dependency14.from=prop
-dependency14.to=gif
->>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
 dependency14.type=UsesDependency
-<<<<<<< HEAD
->>>>>>> ea3623f2353cd8dca064229c26e4897125a31b98
->>>>>>> 89740160d92fd6d4d175ebf863e79b34b1e3aa93
-=======
-dependency15.from=prop
-dependency15.to=animation
+dependency15.from=RouterGilles
+dependency15.to=prop
 dependency15.type=UsesDependency
-<<<<<<< HEAD
-dependency16.from=gif
-dependency16.to=GifImage
+dependency16.from=RouterGilles
+dependency16.to=DesktopGilles
 dependency16.type=UsesDependency
-=======
->>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
->>>>>>> 249e4bb3a81a2bc45c639317d3fcdc017398a0e9
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
+dependency17.from=RouterGilles
+dependency17.to=RoomGilles
+dependency17.type=UsesDependency
+dependency18.from=GOD
+dependency18.to=RoomJoran
+dependency18.type=UsesDependency
+dependency19.from=Room4saad
+dependency19.to=prop
+dependency19.type=UsesDependency
 dependency2.from=Room1Oguz
 dependency2.to=animation
 dependency2.type=UsesDependency
+dependency20.from=DesktopGilles
+dependency20.to=prop
+dependency20.type=UsesDependency
+dependency21.from=DesktopGilles
+dependency21.to=RoomGilles
+dependency21.type=UsesDependency
+dependency22.from=prop
+dependency22.to=animation
+dependency22.type=UsesDependency
+dependency23.from=prop
+dependency23.to=gif
+dependency23.type=UsesDependency
+dependency24.from=gif
+dependency24.to=GifImage
+dependency24.type=UsesDependency
 dependency3.from=RoomPlaceholder
 dependency3.to=gif
 dependency3.type=UsesDependency
@@ -94,54 +71,19 @@ dependency6.type=UsesDependency
 dependency7.from=RoomGilles
 dependency7.to=DesktopGilles
 dependency7.type=UsesDependency
-dependency8.from=RoomRobin
-dependency8.to=prop
+dependency8.from=RoomGilles
+dependency8.to=RouterGilles
 dependency8.type=UsesDependency
-dependency9.from=RoomJoran
-dependency9.to=prop
+dependency9.from=RoomGilles
+dependency9.to=start_screen
 dependency9.type=UsesDependency
-<<<<<<< HEAD
-<<<<<<< HEAD
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+editor.fx.0.height=737
+editor.fx.0.width=814
+editor.fx.0.x=232
+editor.fx.0.y=-19
 height=694
-package.numDependencies=14
-=======
-editor.fx.0.height=838
-editor.fx.0.width=782
-editor.fx.0.x=760
-editor.fx.0.y=-7
-=======
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
-<<<<<<< HEAD
-editor.fx.0.height=830
-editor.fx.0.width=1550
-editor.fx.0.x=-7
-editor.fx.0.y=-7
-height=830
-package.numDependencies=16
-package.numTargets=14
-=======
-editor.fx.0.height=838
-editor.fx.0.width=1550
-editor.fx.0.x=-7
-editor.fx.0.y=-7
-height=838
-<<<<<<< HEAD
-package.numDependencies=14
->>>>>>> ea3623f2353cd8dca064229c26e4897125a31b98
->>>>>>> 89740160d92fd6d4d175ebf863e79b34b1e3aa93
-=======
-package.numDependencies=15
-<<<<<<< HEAD
-package.numTargets=14
-=======
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
-package.numTargets=13
->>>>>>> ccf8a4fde07198e22ae4d43b5c6357a3cac09b1d
->>>>>>> 249e4bb3a81a2bc45c639317d3fcdc017398a0e9
+package.numDependencies=24
+package.numTargets=16
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -171,37 +113,47 @@ target10.width=120
 target10.x=0
 target10.y=0
 target11.height=70
-<<<<<<< HEAD
 target11.name=RoomJoran
-=======
-target11.name=DesktopJoran
->>>>>>> 249e4bb3a81a2bc45c639317d3fcdc017398a0e9
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=120
 target11.x=0
 target11.y=0
 target12.height=70
-target12.name=GOD
+target12.name=DesktopJoran
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
-target13.name=Room4saad
+target13.name=RouterGilles
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
-target14.name=DesktopGilles
+target14.name=GOD
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
+target15.height=70
+target15.name=Room4saad
+target15.showInterface=false
+target15.type=ClassTarget
+target15.width=120
+target15.x=0
+target15.y=0
+target16.height=70
+target16.name=DesktopGilles
+target16.showInterface=false
+target16.type=ClassTarget
+target16.width=120
+target16.x=0
+target16.y=0
 target2.height=70
 target2.name=Room1Oguz
 target2.showInterface=false
@@ -259,12 +211,7 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
-<<<<<<< HEAD
 width=1294
 world.lastInstantiated=RoomGilles
-=======
-width=1550
-world.lastInstantiated=RoomJoran
->>>>>>> 01d2ac734be46da93bde534db6750a86a191a447
 xPosition=0
 yPosition=0
