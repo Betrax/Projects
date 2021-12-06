@@ -11,6 +11,7 @@ public class DesktopJoran extends World
     public static World DesktopJoran = new DesktopJoran();
     int x;
     int y;
+    long static_time = System.currentTimeMillis();
     prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);   
     prop virus1 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
     prop virus2 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
@@ -20,14 +21,14 @@ public class DesktopJoran extends World
     prop virus6 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
     prop virus7 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
     prop virus8 = new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0);
-    prop needle = new prop ("RoomJoran/needle.png", 8, 8, x, y, 0);
+    prop needle = new prop ("RoomJoran/norton.png", 8, 8, x, y, 0);
     
     public DesktopJoran()
     {    
          // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 700, 1); 
         
-        addObject(background, 100, 100);
+        
         addObject(virus1, 100, 100);
         addObject(virus2, 100, 100);
         addObject(virus3, 100, 100);
@@ -39,18 +40,34 @@ public class DesktopJoran extends World
         addObject(needle, x, y);
     }
     
-    
     public void act()
     {
         move();
     }
-
+    
     public void move()
     {   
-        if (needle.click("hold"))
+        if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("up"))
         {
-             x = Greenfoot.getMouseInfo().getX();
+             static_time = System.currentTimeMillis();
+             needle.locationY -= 10;
         }
+        if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("left"))
+        {
+             static_time = System.currentTimeMillis();
+             needle.locationX -= 10;
+        }
+        if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("down"))
+        {
+             static_time = System.currentTimeMillis();
+             needle.locationY += 10;
+        }
+        if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("right"))
+        {
+             static_time = System.currentTimeMillis();
+             needle.locationX += 10;
+        }
+        
     }
     }
 

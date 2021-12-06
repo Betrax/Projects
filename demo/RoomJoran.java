@@ -29,7 +29,8 @@ public class RoomJoran extends World
         }
     }
     
-    public void WorldFix() {
+    public void WorldFix() 
+    {
         Greenfoot.setWorld(RoomRobin.RoomRobin);
     }
 }
