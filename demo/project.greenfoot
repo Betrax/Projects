@@ -8,6 +8,7 @@ dependency1.from=Room1Oguz
 dependency1.to=prop
 dependency1.type=UsesDependency
 dependency10.from=RoomJoran
+<<<<<<< HEAD
 dependency10.to=RoomPlaceholder
 dependency10.type=UsesDependency
 dependency11.from=RoomJoran
@@ -24,19 +25,54 @@ dependency14.to=prop
 dependency14.type=UsesDependency
 dependency15.from=DesktopGilles
 dependency15.to=prop
+=======
+dependency10.to=prop
+dependency10.type=UsesDependency
+dependency11.from=RoomJoran
+dependency11.to=RoomPlaceholder
+dependency11.type=UsesDependency
+dependency12.from=RoomJoran
+dependency12.to=DesktopJoran
+dependency12.type=UsesDependency
+dependency13.from=RoomJoran
+dependency13.to=RoomRobin
+dependency13.type=UsesDependency
+dependency14.from=DesktopJoran
+dependency14.to=prop
+dependency14.type=UsesDependency
+dependency15.from=DesktopJoran
+dependency15.to=RoomJoran
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 dependency15.type=UsesDependency
-dependency16.from=prop
-dependency16.to=animation
+dependency16.from=GOD
+dependency16.to=start_screen
 dependency16.type=UsesDependency
+<<<<<<< HEAD
 dependency17.from=prop
 dependency17.to=gif
+=======
+dependency17.from=Room4saad
+dependency17.to=prop
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 dependency17.type=UsesDependency
-dependency18.from=gif
-dependency18.to=GifImage
+dependency18.from=DesktopGilles
+dependency18.to=prop
 dependency18.type=UsesDependency
+<<<<<<< HEAD
+=======
+dependency19.from=prop
+dependency19.to=animation
+dependency19.type=UsesDependency
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 dependency2.from=Room1Oguz
 dependency2.to=animation
 dependency2.type=UsesDependency
+dependency20.from=prop
+dependency20.to=gif
+dependency20.type=UsesDependency
+dependency21.from=gif
+dependency21.to=GifImage
+dependency21.type=UsesDependency
 dependency3.from=RoomPlaceholder
 dependency3.to=gif
 dependency3.type=UsesDependency
@@ -55,9 +91,10 @@ dependency7.type=UsesDependency
 dependency8.from=RoomRobin
 dependency8.to=prop
 dependency8.type=UsesDependency
-dependency9.from=RoomJoran
-dependency9.to=prop
+dependency9.from=RoomRobin
+dependency9.to=time
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -65,6 +102,15 @@ editor.fx.0.y=0
 height=830
 package.numDependencies=18
 package.numTargets=15
+=======
+editor.fx.0.height=838
+editor.fx.0.width=1550
+editor.fx.0.x=-7
+editor.fx.0.y=-7
+height=838
+package.numDependencies=21
+package.numTargets=16
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -108,26 +154,48 @@ target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
+<<<<<<< HEAD
 target13.name=GOD
+=======
+target13.name=time
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
+<<<<<<< HEAD
 target14.name=Room4saad
+=======
+target14.name=GOD
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< HEAD
 target15.name=DesktopGilles
+=======
+target15.name=Room4saad
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
 target15.x=0
 target15.y=0
+<<<<<<< HEAD
+=======
+target16.height=70
+target16.name=DesktopGilles
+target16.showInterface=false
+target16.type=ClassTarget
+target16.width=120
+target16.x=0
+target16.y=0
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 target2.height=70
 target2.name=Room1Oguz
 target2.showInterface=false
@@ -186,6 +254,10 @@ target9.x=0
 target9.y=0
 version=3.0.0
 width=1550
+<<<<<<< HEAD
 world.lastInstantiated=DesktopJoran
+=======
+world.lastInstantiated=start_screen
+>>>>>>> 8b23cbfd37201f8076ac986a8018971e7f682255
 xPosition=0
 yPosition=0
