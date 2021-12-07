@@ -9,7 +9,6 @@ import greenfoot.*;
 
 public class GOD extends World
 {
-
     public GOD()
     {
         super(1200, 700, 1);
