@@ -17,7 +17,7 @@ public class DesktopJoran extends World
     prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);   
    
     prop norton = new prop ("RoomJoran/norton.png", 8, 8, x, y, 0);
-    prop textbox = new prop ("RoomJoran/textbox.png", 8, 8, 100, 100, 0);
+    prop textbox = new prop ("RoomJoran/textbox.png", 8, 8, 600, 350, 0);
     prop virussen [] = {new prop ("RoomJoran/virus.png", 15, 15, 100, 100, 0),
                         new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
                         new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
@@ -57,7 +57,7 @@ public class DesktopJoran extends World
         if (i == 7)
         {
             showText("Congrats you have removed all the virusses of of your computer!", 600, 350);
-            
+            addObject(textbox, 100, 100);
         }
         if (norton.touchingProp(virussen[0]))
         {
