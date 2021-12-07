@@ -16,7 +16,7 @@ public class Room1Oguz extends World
     prop tutorial = new prop("Oguz/tutorial.png", 50, 50, 1200 / 2, 700 / 2 + 200, 42);
     prop continue1 = new prop("Oguz/CONTINUE.png", 50, 50, 1200 / 2 + 340, 700 / 2 + 250, 42);
     // left 250 - right 510
-    prop virus = new prop("Oguz/game/virus.png", 15, 15, 370, 500, 1);
+    prop virus = new prop("Oguz/game/virus.png", 5, 5, 370, 500, 1);
     prop shield = new prop("Oguz/game/shield.png", 10, 10, 510, 460, 1);
 
     int score = 0;
@@ -68,6 +68,8 @@ public class Room1Oguz extends World
             score += 1;
             remove(mobs);
         }
+        String s=String.valueOf(score);
+        showText(s,510, 290);
         levelf(shield, score);
         if (score >= 6 && switches[9])
         {
@@ -225,6 +227,7 @@ public class Room1Oguz extends World
             remove(mobs);
             removeObject(virus);
             switches[3] = false;
+            showText("",510, 290);
             bgchange("Oguz/intro/6zoom out/");
 
             switches[4] = true;
@@ -277,6 +280,7 @@ public class Room1Oguz extends World
         }
         if (door.click("tap"))
         {
+            start_screen.backgroundMusic.stop();
             Greenfoot.setWorld(new RoomJoran());
         }
     }
