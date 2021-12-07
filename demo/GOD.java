@@ -9,6 +9,7 @@ import greenfoot.*;
 
 public class GOD extends World
 {
+    
     public GOD()
     {
         super(1200, 700, 1);
@@ -18,7 +19,7 @@ public class GOD extends World
                                                        // between them.
                                                     
                                                        
-        Greenfoot.setWorld(RoomJoran.RoomJoran);                                               
+                                                    
                                                        
                                                     /* Copy paste instead of retyping every time :)
                                                      * RoomRobin.RoomRobin
@@ -34,4 +35,13 @@ public class GOD extends World
                                                      */
     }
     
+    boolean force_switch = true;
+    public void act()
+    {
+        if(force_switch)
+        {
+            Greenfoot.setWorld(new Room1Oguz());
+            force_switch= false;
+        }
+    }
 }
