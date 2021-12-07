@@ -45,9 +45,44 @@ public class DesktopJoran extends World
     public void act()
     {
         move();
-        if (norton.touching())
+        if (norton.touching(virussen[0]))
         {
             removeObject(virussen[0]);
+            
+        }
+        if (norton.touching(virussen[1]))
+        {
+            removeObject(virussen[1]);
+            
+        }
+        if (norton.touching(virussen[2]))
+        {
+            removeObject(virussen[2]);
+            
+        }
+        if (norton.touching(virussen[3]))
+        {
+            removeObject(virussen[3]);
+            
+        }
+        if (norton.touching(virussen[4]))
+        {
+            removeObject(virussen[4]);
+            
+        }
+        if (norton.touching(virussen[5]))
+        {
+            removeObject(virussen[5]);
+            
+        }
+        if (norton.touching(virussen[6]))
+        {
+            removeObject(virussen[6]);
+            
+        }
+        if (norton.touching(virussen[7]))
+        {
+            removeObject(virussen[7]);
             
         }
     }
