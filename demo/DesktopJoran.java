@@ -9,105 +9,73 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class DesktopJoran extends World
 {
     public static World DesktopJoran = new DesktopJoran();
-    prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);
-    prop win =  new prop ("RoomJoran/win.jpg", 10000, 100000, 100, 100, 0);   
+    int x;
+    int y;
+    long static_time = System.currentTimeMillis();
+    prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);   
+   
+    prop norton = new prop ("RoomJoran/norton.png", 8, 8, x, y, 0);
+    
+    prop virussen [] = {new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
+                        new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0)};
     
     public DesktopJoran()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 700, 1); 
         
         
-        addObject(background, 100, 100);
+        addObject(virussen[0], 100, 100);
+        addObject(virussen[1], 100, 100);
+        addObject(virussen[2], 100, 100);
+        addObject(virussen[3], 100, 100);
+        addObject(virussen[4], 100, 100);
+        addObject(virussen[5], 100, 100);
+        addObject(virussen[6], 100, 100);
+        addObject(virussen[7], 100, 100);
+        addObject(norton, x, y);
     }
-    
     
     public void act()
     {
-        guessgame();
+        move();
+        if (norton.touching())
+        {
+            removeObject(virussen[0]);
+            
+        }
     }
     
-        String guess = "" ;
-        String answer = "Updaten";
-        int guess_count = 0; 
-        boolean out_of_guesses[] = {true, true, true, true, true, true};
-       
-    public void guessgame()
-    {
-          if (out_of_guesses[0] == true)
-         {
-            while ((guess!= answer) && out_of_guesses[1] == true)
-             {
-                if (guess_count < 3)
-                 {
-                     String guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? ");
-                     guess_count ++;
-                 }
-                else
-                 {
-                     out_of_guesses[0] = false;
-                     out_of_guesses[1] = false;
-                 }
-                }
-            if (guess == answer)
-            {
-                Greenfoot.setWorld(RoomJoran.RoomJoran);
-            }
-        }
-            
-        if (out_of_guesses[1] == false)
-            {
-            while ((guess!= answer) && out_of_guesses[2])
-             {
-                if (guess_count < 6)
-                 {
-                     guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? \n Tip 1: Het inorde houden van apllicaties  " );
-                     guess_count ++;
-                 }
-                else 
-                 {
-                     out_of_guesses[2] = false;
-                 }
-                }
-            if (guess == answer)
-                 {
-                     addObject(win, 100, 100);
-                 }
-                }
-                
-                 if (out_of_guesses[2] == false)
-         {
-            while ((guess!= answer) && out_of_guesses[3])
-             {
-                if (guess_count < 9)
-                 {
-                     guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? \n Tip 1: Het inorde houden van apllicaties \n Tip 2: De eerste letter is U. ");
-                     guess_count ++;
-                 }
-                else 
-                 {
-                     out_of_guesses[3] = false;
-                 }
-                }
-            if (guess == answer) 
-                 {
-                     addObject(win, 100, 100);
-                 }
-        }
-        
-        if (out_of_guesses[3] == false)
+    public void move()
+    {   
+        if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("up"))
         {
-            while (guess!= answer)
-            {
-                guess = Greenfoot.ask("Wat is een simpele maar effiecient manier om gehacked te worden te voorkomen? \n Tip 1: Het inorde houden van apllicaties \n Tip 2: De eerste letter is U.\n Tip 3: De tweede letter is P:");
-            }
-            if (guess == answer)
-            {
-                addObject(win, 100, 100);
-                Greenfoot.stop();
-            }
+             static_time = System.currentTimeMillis();
+             norton.locationY -= 10;
+        }
+        if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("left"))
+        {
+             static_time = System.currentTimeMillis();
+             norton.locationX -= 10;
+        }
+        if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("down"))
+        {
+             static_time = System.currentTimeMillis();
+             norton.locationY += 10;
+        }
+        if (System.currentTimeMillis() - static_time >=100 && Greenfoot.isKeyDown("right"))
+        {
+             static_time = System.currentTimeMillis();
+             norton.locationX += 10;
         }
     }
+    
     }
 
 
