@@ -244,7 +244,7 @@ public class RoomRobin extends World
                     CanSpawn = false;
                 }
 
-                if (CanShoot == true && Greenfoot.isKeyDown("space") )
+                if (CanShoot == true && Greenfoot.isKeyDown("space"))
                 {
                     addObject(Code, 1, 1);
                     Code.locationY = Defender.locationY;

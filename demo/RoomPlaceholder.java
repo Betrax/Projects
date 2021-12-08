@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class RoomPlaceholder extends World
 {
-    
+
     public static World RoomPlaceholder = new RoomPlaceholder();
     gif background = new gif("forest.gif");
 

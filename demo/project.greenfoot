@@ -35,18 +35,8 @@ dependency17.type=UsesDependency
 dependency18.from=RoomJoran
 dependency18.to=DesktopJoran
 dependency18.type=UsesDependency
-<<<<<<< HEAD
 dependency19.from=RoomJoran
 dependency19.to=mouse
-=======
-<<<<<<< HEAD
-dependency19.from=GOD
-dependency19.to=Room4saad
-=======
-dependency19.from=RouterGilles
-dependency19.to=prop
->>>>>>> 7f92916b89f82a0d26e7bd6b2d915451d98739ba
->>>>>>> 9b74e43b461feaee30df2aa3847a842aaa5c8a6f
 dependency19.type=UsesDependency
 dependency2.from=Room1Oguz
 dependency2.to=time
@@ -69,27 +59,30 @@ dependency24.type=UsesDependency
 dependency25.from=GOD
 dependency25.to=start_screen
 dependency25.type=UsesDependency
-dependency26.from=Room4saad
-dependency26.to=prop
+dependency26.from=GOD
+dependency26.to=Room4saad
 dependency26.type=UsesDependency
-dependency27.from=DesktopGilles
+dependency27.from=Room4saad
 dependency27.to=prop
 dependency27.type=UsesDependency
 dependency28.from=DesktopGilles
-dependency28.to=RoomGilles
+dependency28.to=prop
 dependency28.type=UsesDependency
-dependency29.from=prop
-dependency29.to=animation
+dependency29.from=DesktopGilles
+dependency29.to=RoomGilles
 dependency29.type=UsesDependency
 dependency3.from=Room1Oguz
 dependency3.to=RoomJoran
 dependency3.type=UsesDependency
 dependency30.from=prop
-dependency30.to=gif
+dependency30.to=animation
 dependency30.type=UsesDependency
-dependency31.from=gif
-dependency31.to=GifImage
+dependency31.from=prop
+dependency31.to=gif
 dependency31.type=UsesDependency
+dependency32.from=gif
+dependency32.to=GifImage
+dependency32.type=UsesDependency
 dependency4.from=Room1Oguz
 dependency4.to=start_screen
 dependency4.type=UsesDependency
@@ -108,38 +101,12 @@ dependency8.type=UsesDependency
 dependency9.from=RoomGilles
 dependency9.to=prop
 dependency9.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=98
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=1048
-package.numDependencies=31
-=======
-<<<<<<< HEAD
-editor.fx.0.height=737
-editor.fx.0.width=814
-editor.fx.0.x=360
-editor.fx.0.y=26
-height=830
-=======
-<<<<<<< HEAD
-editor.fx.0.height=838
-editor.fx.0.width=1550
-editor.fx.0.x=-7
-editor.fx.0.y=-7
-height=838
->>>>>>> 545fe9e3a01b0cd5e4562452261ec3cf7bac6ef9
-package.numDependencies=25
-=======
-editor.fx.0.height=1048
-editor.fx.0.width=1936
-editor.fx.0.x=-8
-editor.fx.0.y=-8
-height=1048
-package.numDependencies=28
->>>>>>> 7f92916b89f82a0d26e7bd6b2d915451d98739ba
->>>>>>> 9b74e43b461feaee30df2aa3847a842aaa5c8a6f
+package.numDependencies=32
 package.numTargets=17
 project.charset=UTF-8
 publish.hasSource=false
@@ -275,20 +242,7 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
-<<<<<<< HEAD
-width=1550
-<<<<<<< HEAD
-world.lastInstantiated=RoomGilles
-=======
-world.lastInstantiated=Room4saad
-=======
 width=1936
-<<<<<<< HEAD
-world.lastInstantiated=RoomGilles
-=======
-world.lastInstantiated=GOD
->>>>>>> 7f92916b89f82a0d26e7bd6b2d915451d98739ba
->>>>>>> 545fe9e3a01b0cd5e4562452261ec3cf7bac6ef9
->>>>>>> 9b74e43b461feaee30df2aa3847a842aaa5c8a6f
+world.lastInstantiated=Room4saad
 xPosition=0
 yPosition=0

@@ -1,9 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import javax.swing.JOptionPane;
+
 /**
  * Write a description of class DesktopGilles here.
  * 
- * @author (your name) 
+ * @author (your name)
  * @version (a version number or a date)
  */
 public class DesktopGilles extends World
@@ -17,31 +18,33 @@ public class DesktopGilles extends World
     prop krant = new prop("tabs/krant.jpg", 54, 70, 600, 275, 0);
     prop hack_closed = new prop("tabs/hack_closed.jpg", 130, 98, 600, 275, 0);
     prop hack_open = new prop("tabs/hack_open.jpg", 130, 98, 600, 275, 0);
+
     public DesktopGilles()
-    {    
-        super(1200, 700, 1); 
+    {
+        super(1200, 700, 1);
         GreenfootImage background = (new GreenfootImage("windowsedit.jpg"));
         background.scale(getWidth(), getHeight());
-        setBackground(background); 
-    
+        setBackground(background);
+
         addObject(power, 30, 670);
         addObject(chrome, 40, 40);
         addObject(note, 110, 40);
         addObject(file, 180, 40);
     }
-    
+
     boolean note_open = false;
     boolean chrome_open = false;
     boolean file_open = false;
     boolean password = false;
     public static boolean wifi = false;
+
     public void act()
     {
         if (power.click("tap"))
         {
             Greenfoot.setWorld(RoomGilles.RoomGilles);
         }
-        
+
         if (chrome.click("tap") && wifi == false)
         {
             JOptionPane.showMessageDialog(null, "No internet connection.");
@@ -50,7 +53,7 @@ public class DesktopGilles extends World
         {
             chrome_open = true;
             if (RoomGilles.door_open == false)
-            {   
+            {
                 addObject(hack_closed, 1, 1);
             }
             else
@@ -64,13 +67,14 @@ public class DesktopGilles extends World
             removeObject(hack_open);
             chrome_open = false;
         }
-        if (chrome_open && wifi == true && Greenfoot.isKeyDown("control") && Greenfoot.isKeyDown("d"))
+        if (chrome_open && wifi == true && Greenfoot.isKeyDown("control")
+                && Greenfoot.isKeyDown("d"))
         {
             addObject(hack_open, 1, 1);
             RoomGilles.door_open = true;
             Greenfoot.playSound("unlock.mp3");
         }
-        
+
         if ((note.click("tap")) && (!note_open))
         {
             addObject(note_tab, 1, 1);
@@ -81,7 +85,7 @@ public class DesktopGilles extends World
             removeObject(note_tab);
             note_open = false;
         }
-        
+
         if (file.click("tap") && !password)
         {
             String pass;

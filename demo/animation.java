@@ -37,7 +37,7 @@ public class animation
         }
         else // If the filepath is to a folder that contains multiple images
         {
-            
+
             // idk why but java does not wants to work with greenfoot. So I had to fix the path for
             // it
             java_file_path = (System.getProperty("user.dir") + "/images/" + file_path)

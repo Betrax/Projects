@@ -22,6 +22,7 @@ public class prop extends Actor
     boolean click = false;
     gif gif;
     String path;
+
     // Only function you should care about is the constructor here.
     // Go to the world create an object
     // with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int
@@ -37,7 +38,7 @@ public class prop extends Actor
         {
             this.animation = new animation(path);
         }
-        
+
         this.scaleX = scaleX;
         this.scaleY = scaleY;
         this.speed = speed;
@@ -60,11 +61,12 @@ public class prop extends Actor
     }
 
     boolean hold;
-    
+
 
     public boolean click(String soort_click)
     {
-        //only return 1 true statement, after you press the mouse. It requires another click to work.
+        // only return 1 true statement, after you press the mouse. It requires another click to
+        // work.
         if (soort_click == "tap")
         {
             if (Greenfoot.mousePressed(this))
@@ -92,15 +94,15 @@ public class prop extends Actor
 
         return false;
     }
-    
-    
+
+
     // checks if your prop is touching another prop.
     // Use it in act(){}, like this: if(MYPROP.touching()){}
     public boolean touching(prop prop)
     {
-       return isTouching(prop.class);
+        return isTouching(prop.class);
     }
-    
+
     // checks if your prop is touching a specific prop.
     // Use it in act(){}, like this: if(MYPROP.touchingProp(TARGETPROPNAME)){}
     public boolean touchingProp(prop prop)
@@ -108,8 +110,7 @@ public class prop extends Actor
         try
         {
             return intersects(prop);
-        }
-        catch(Exception e)
+        }catch (Exception e)
         {
             return false;
         }

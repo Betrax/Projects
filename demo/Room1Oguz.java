@@ -112,7 +112,7 @@ public class Room1Oguz extends World
             remove(mobs);
             removeObject(virus);
             switches[3] = false;
-            showText("",510, 290);
+            showText("", 510, 290);
             bgchange("Oguz/intro/6zoom out/");
 
             switches[4] = true;
@@ -196,8 +196,8 @@ public class Room1Oguz extends World
             score += 1;
             remove(mobs);
         }
-        String s=String.valueOf(score);
-        showText(s,510, 290);
+        String s = String.valueOf(score);
+        showText(s, 510, 290);
         levelf(shield, score);
         if (score >= 6 && switches[9])
         {
@@ -207,7 +207,7 @@ public class Room1Oguz extends World
             background.animation.file_path = "Oguz/intro/5idle green/";
         }
     }
-    
+
     public void levelf(prop shield, int amount)
     {
         if (amount != startval)
