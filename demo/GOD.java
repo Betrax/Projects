@@ -18,7 +18,7 @@ public class GOD extends World
                                                        // between them.
                                                     
                                                        
-        Greenfoot.setWorld(start_screen.start_screen);                                               
+        Greenfoot.setWorld(Room4saad.Room4saad);                                               
                                                        
                                                     /* Copy paste instead of retyping every time :)
                                                      * RoomRobin.RoomRobin
