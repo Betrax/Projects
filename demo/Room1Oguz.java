@@ -9,7 +9,7 @@ public class Room1Oguz extends World
     prop background = new prop("Oguz/intro/2room red/", 63, 63, 1200 / 2, 700 / 2, 42);
     prop pc = new prop("Oguz/trans.png", 300, 200, 550, 700 / 2, 42);
     prop power_button = new prop("Oguz/trans.png", 15, 15, 775, 173, 100);
-    prop arrow = new prop("Oguz/arrow.gif", 15, 15, 775, 173, 100);
+    prop arrow = new prop("Oguz/arrow.gif", 15, 15, 775, 173, 1);
     prop door = new prop("Oguz/trans.png", 200, 400, 830, 340, 100);
     prop congrats = new prop("Oguz/congrats.png", 50, 50, 1200 / 2 - 50, 700 / 2 + 200, 42);
     prop blackbar = new prop("Oguz/blackbar.png", 50, 50, 1200 / 2 + 100, 700 / 2 + 200, 42);
@@ -38,121 +38,6 @@ public class Room1Oguz extends World
     }
 
     public void act()
-    {
-        background();
-    }
-
-    public void screen()
-    {
-        addOb(virus);
-        int virusSpeed = 2;
-        if (Greenfoot.isKeyDown("up") && delay[0].d(15) && virus.locationY >= 290)
-        {
-            virus.locationY -= virusSpeed;
-        }
-        if (Greenfoot.isKeyDown("down") && delay[1].d(15) && virus.locationY <= 500)
-        {
-            virus.locationY += virusSpeed;
-        }
-        if (Greenfoot.isKeyDown("left") && delay[2].d(15) && virus.locationX >= 250)
-        {
-            virus.locationX -= virusSpeed + 1;
-        }
-        if (Greenfoot.isKeyDown("right") && delay[3].d(15) && virus.locationX <= 510)
-        {
-            virus.locationX += virusSpeed + 1;
-        }
-        if (virus.locationY <= 290)
-        {
-            virus.locationY = 500;
-            score += 1;
-            remove(mobs);
-        }
-        String s=String.valueOf(score);
-        showText(s,510, 290);
-        levelf(shield, score);
-        if (score >= 6 && switches[9])
-        {
-            switches[9] = false;
-            addOb(arrow);
-            addOb(power_button);
-            background.animation.file_path = "Oguz/intro/5idle green/";
-        }
-    }
-
-    public void delayArray()
-    {
-        if (switches[6])
-        {
-            for (int i = 0; i < 50; i++)
-            {
-                delay[i] = new time();
-            }
-            switches[6] = false;
-        }
-    }
-
-    public void levelf(prop shield, int amount)
-    {
-        if (amount != startval)
-        {
-            startval = amount;
-            for (int i = 0; i < amount; i++)
-            {
-                int X = getRandomNumber(250, 510);
-                int Y = getRandomNumber(290, 470);
-                mobs[i] = new prop("Oguz/game/shield.png", 12, 12, X, Y, 1);
-            }
-            add(mobs, amount);
-        }
-        for (int i = 0; i < amount; i++)
-        {
-            if (delay[i + 4].d(10) && mobs[i].locationX >= 250)
-            {
-                mobs[i].locationX -= mobspeed;
-            }
-            else if (mobs[i].locationX <= 250)
-            {
-                mobs[i].locationX = 510;
-                mobs[i].locationY = getRandomNumber(290, 470);
-                mobspeed = getRandomNumber(1, 2);
-            }
-            if (virus.touchingProp(mobs[i]))
-            {
-                virus.locationY = 500;
-            }
-        }
-    }
-
-    public void add(prop array[], int amount)
-    {
-        for (int i = 0; i != amount; i++)
-        {
-            addObject(array[i], 1, 1);
-        }
-    }
-
-    public int getRandomNumber(int start, int end)
-    {
-        int normal = Greenfoot.getRandomNumber(end - start + 1);
-        return normal + start;
-    }
-
-    public void addOb(prop prop)
-    {
-        addObject(prop, 1, 1);
-    }
-
-    public void remove(prop array[])
-    {
-        for (int i = 0; i != array.length; i++)
-        {
-            removeObject(array[i]);
-        }
-    }
-
-
-    public void background()
     {
         delayArray();
         // These are all animations that need to happen to fake that 3D effect, each animation is
@@ -282,6 +167,115 @@ public class Room1Oguz extends World
         {
             start_screen.backgroundMusic.stop();
             Greenfoot.setWorld(new RoomJoran());
+        }
+    }
+
+    public void screen()
+    {
+        addOb(virus);
+        int virusSpeed = 2;
+        if (Greenfoot.isKeyDown("up") && delay[0].d(15) && virus.locationY >= 290)
+        {
+            virus.locationY -= virusSpeed;
+        }
+        if (Greenfoot.isKeyDown("down") && delay[1].d(15) && virus.locationY <= 500)
+        {
+            virus.locationY += virusSpeed;
+        }
+        if (Greenfoot.isKeyDown("left") && delay[2].d(15) && virus.locationX >= 250)
+        {
+            virus.locationX -= virusSpeed + 1;
+        }
+        if (Greenfoot.isKeyDown("right") && delay[3].d(15) && virus.locationX <= 510)
+        {
+            virus.locationX += virusSpeed + 1;
+        }
+        if (virus.locationY <= 290)
+        {
+            virus.locationY = 500;
+            score += 1;
+            remove(mobs);
+        }
+        String s=String.valueOf(score);
+        showText(s,510, 290);
+        levelf(shield, score);
+        if (score >= 6 && switches[9])
+        {
+            switches[9] = false;
+            addOb(arrow);
+            addOb(power_button);
+            background.animation.file_path = "Oguz/intro/5idle green/";
+        }
+    }
+    
+    public void levelf(prop shield, int amount)
+    {
+        if (amount != startval)
+        {
+            startval = amount;
+            for (int i = 0; i < amount; i++)
+            {
+                int X = getRandomNumber(250, 510);
+                int Y = getRandomNumber(290, 470);
+                mobs[i] = new prop("Oguz/game/shield.png", 12, 12, X, Y, 1);
+            }
+            add(mobs, amount);
+        }
+        for (int i = 0; i < amount; i++)
+        {
+            if (delay[i + 4].d(10) && mobs[i].locationX >= 250)
+            {
+                mobs[i].locationX -= mobspeed;
+            }
+            else if (mobs[i].locationX <= 250)
+            {
+                mobs[i].locationX = 510;
+                mobs[i].locationY = getRandomNumber(290, 470);
+                mobspeed = getRandomNumber(1, 2);
+            }
+            if (virus.touchingProp(mobs[i]))
+            {
+                virus.locationY = 500;
+            }
+        }
+    }
+
+    public void delayArray()
+    {
+        if (switches[6])
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                delay[i] = new time();
+            }
+            switches[6] = false;
+        }
+    }
+
+    public void add(prop array[], int amount)
+    {
+        for (int i = 0; i != amount; i++)
+        {
+            addObject(array[i], 1, 1);
+        }
+    }
+
+    public int getRandomNumber(int start, int end)
+    {
+        int normal = Greenfoot.getRandomNumber(end - start + 1);
+        return normal + start;
+    }
+
+    public void addOb(prop prop)
+    {
+        addObject(prop, 1, 1);
+    }
+
+    public void remove(prop array[])
+    {
+        for (int i = 0; i != array.length; i++)
+        {
+            removeObject(array[i]);
         }
     }
 
