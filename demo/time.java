@@ -9,10 +9,10 @@ import java.io.*;
 
 public class time
 {
-    long static_time = System.currentTimeMillis(); // This var needs to be fresh on the init for
+                                                   // This var needs to be fresh on the init for
                                                    // each new line I use it on. So for each new
                                                    // line I generate a variable for it.
-
+    long static_time = System.currentTimeMillis();
     public boolean d(int millisecs)
     {
         if (System.currentTimeMillis() - static_time >= millisecs)

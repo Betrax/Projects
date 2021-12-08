@@ -11,10 +11,16 @@ import greenfoot.*;
 
 // DO NOT TOUCH THIS! MESSAGE ME -Oguz
 
+
+    // Only function you should care about is the constructor here.
+    // Go to the world create an object
+    // with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int
+    // locationX, int locationY, int speed)`.
+
 public class prop extends Actor
 {
     animation animation;
-    int scaleX; // has to be between 2 - infinity
+    int scaleX; // has to be between 2 - infinity, because an image is always 2d and connot be 1D.
     int scaleY; // has to be between 2 - infinity
     int speed; // in milliseconds.
     int locationX; // X location of the object.
@@ -23,10 +29,6 @@ public class prop extends Actor
     gif gif;
     String path;
 
-    // Only function you should care about is the constructor here.
-    // Go to the world create an object
-    // with the `prop *your object name* = new prop(String file_path, int scaleX, int scaleY, int
-    // locationX, int locationY, int speed)`.
     public prop(String file_path, int scaleX, int scaleY, int locationX, int locationY, int speed)
     {
         this.path = file_path;
