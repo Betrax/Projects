@@ -44,8 +44,8 @@ public class RoomGilles extends World
         {
             if (door_open == true)
             {
-                Greenfoot.playSound("unlock.mp3");
-                Greenfoot.setWorld(start_screen.start_screen);
+                Greenfoot.playSound("door.mp3");
+                Greenfoot.setWorld(RoomRobin.RoomRobin);
             }
             else
             {
