@@ -20,7 +20,7 @@ public class GOD extends World
     {
         if(force_switch)
         {
-            Greenfoot.setWorld(new Room1Oguz());    // changes the room to the cooresponding room
+            Greenfoot.setWorld(new start_screen());    // changes the room to the cooresponding room
                                                     // that is given as an argument. Use the same
                                                     // function with different rooms to switch
                                                     // between them.
