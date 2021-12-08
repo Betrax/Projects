@@ -10,6 +10,9 @@ public class RoomJoran extends World
     prop laptop = new prop("roomJoran/laptop.png", 30, 30, 700, 370, 0);
     prop mirror = new prop("roomJoran/trans.png", 190, 125, 735, 250, 0);
     prop key = new prop("roomJoran/key.png", 10, 10, 720, 250, 0);
+    prop lock = new prop("Oguz/lock.png", 100, 100, 350, 315, 0);
+    prop unlock = new prop("Oguz/unlock.png", 100, 100, 350, 315, 0);
+    
     public RoomJoran()
     {
         super(1200, 700, 1);
@@ -17,9 +20,9 @@ public class RoomJoran extends World
         background.scale(getWidth(), getHeight());
         setBackground(background);
         
-        addObject(door, 100, 200);
         addObject(laptop, 100, 200);
         addObject(mirror, 100, 100);
+        addObject(lock, 1, 1);
     }
 
     public void act()
@@ -32,21 +35,27 @@ public class RoomJoran extends World
     }
     public void key()
     {
-        if (mirror.click("tap"))
+        if (mirror.click("tap") && DesktopJoran.GAMEFINISHED)
         {
             addObject(key, 100, 100);
+            addObject(door, 100, 200);
         }
         if (key.click("hold"))
         {
                 key.locationX = mouse.X();
                 key.locationY = mouse.Y();
         }
-        //try {
-            //if (key.touchingProp(door))
-            //{
-               // Greenfoot.setWorld(RoomPlaceholder.RoomPlaceholder);
-            //}   
-        }//catch (java.lang.NullPointerException)
-    }
+        if (key.touchingProp(door))
+        {
+            removeObject(key);
+            removeObject(lock);
+            addObject(unlock, 1, 1);
+        }
+        if (unlock.click("tap") || door.click("tap"))
+        {
+            Greenfoot.setWorld(new RoomGilles());
+        }
+    }  
+}
 
 

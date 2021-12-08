@@ -12,14 +12,16 @@ public class DesktopJoran extends World
     int x;
     int y;
     
+    public static boolean GAMEFINISHED = false;
+    
     long static_time = System.currentTimeMillis();
     
     prop background = new prop("windows.jpg", 169, 270, 600, 350, 0);   
    
     prop norton = new prop ("RoomJoran/norton.png", 8, 8, x, y, 0);
-    prop textbox1 = new prop ("RoomJoran/textbox.png", 100, 100, 600, 350, 0);
+    prop textbox1 = new prop ("RoomJoran/TextBox.png", 100, 100, 600, 350, 0);
     prop exit = new prop ("RoomJoran/exit.png", 2, 2, 960, 215, 0);
-    prop textbox2 = new prop ("RoomJoran/textbox.png", 20, 10, 600, 450, 0);
+    prop textbox2 = new prop ("RoomJoran/TextBox.png", 20, 10, 600, 450, 0);
     
     prop virussen [] = {new prop ("RoomJoran/virus.png", 15, 15, 100, 100, 0),
                         new prop ("RoomJoran/virus.png", 15, 15, Greenfoot.getRandomNumber(1200), Greenfoot.getRandomNumber(700), 0),
@@ -73,7 +75,7 @@ public class DesktopJoran extends World
     
     public void end() 
     {
-          if (virussen_removed[0] == false && virussen_removed[1] == false && virussen_removed[2] == false && virussen_removed[3] == false &&
+        if (virussen_removed[0] == false && virussen_removed[1] == false && virussen_removed[2] == false && virussen_removed[3] == false &&
         virussen_removed[4] == false && virussen_removed[0] == false && virussen_removed[5] == false && virussen_removed[6] == false &&
         virussen_removed[7] == false)
         {
@@ -83,7 +85,8 @@ public class DesktopJoran extends World
             addObject(textbox2, 100, 100);
             if(textbox2.click("tap"))
             {
-                Greenfoot.setWorld(RoomJoran.RoomJoran);
+                GAMEFINISHED = true;
+                Greenfoot.setWorld(new RoomJoran());
             }
         }
     }

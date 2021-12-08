@@ -105,6 +105,13 @@ public class prop extends Actor
     // Use it in act(){}, like this: if(MYPROP.touchingProp(TARGETPROPNAME)){}
     public boolean touchingProp(prop prop)
     {
-       return intersects(prop);
+        try
+        {
+            return intersects(prop);
+        }
+        catch(Exception e)
+        {
+            return false;
+        }
     }
 }
