@@ -9,7 +9,6 @@ import greenfoot.*;
 
 public class GOD extends World
 {
-
     public GOD()
     {
         super(1200, 700, 1);
@@ -19,7 +18,7 @@ public class GOD extends World
                                                        // between them.
                                                     
                                                        
-        Greenfoot.setWorld(RoomJoran.RoomJoran);                                               
+        Greenfoot.setWorld(start_screen.start_screen);                                               
                                                        
                                                     /* Copy paste instead of retyping every time :)
                                                      * RoomRobin.RoomRobin
