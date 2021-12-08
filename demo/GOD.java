@@ -9,9 +9,11 @@ import greenfoot.*;
 
 public class GOD extends World
 {
+    
     public GOD()
     {
         super(1200, 700, 1);
+<<<<<<< HEAD
                                                        // changes the room to the cooresponding room
                                                        // that is given as an argument. Use the same
                                                        // function with different rooms to switch
@@ -32,6 +34,20 @@ public class GOD extends World
                                                      * start_screen.start_screen
                                                      * 
                                                      */
+=======
+>>>>>>> 7f92916b89f82a0d26e7bd6b2d915451d98739ba
     }
     
+    boolean force_switch = true;
+    public void act()
+    {
+        if(force_switch)
+        {
+            Greenfoot.setWorld(new start_screen());    // changes the room to the cooresponding room
+                                                    // that is given as an argument. Use the same
+                                                    // function with different rooms to switch
+                                                    // between them.
+            force_switch= false;
+        }
+    }
 }
