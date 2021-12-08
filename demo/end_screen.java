@@ -10,6 +10,7 @@ public class end_screen extends World
     
     public void act()
     {
+        GOD.forceswitch();
         addObject(background, 1, 1);
         addObject(text, 1, 1);
     }

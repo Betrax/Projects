@@ -66,6 +66,7 @@ public class DesktopJoran extends World
 
     public void act()
     {
+        GOD.forceswitch();
         start();
         move();
         remove();

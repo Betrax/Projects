@@ -40,6 +40,7 @@ public class DesktopGilles extends World
 
     public void act()
     {
+        GOD.forceswitch();
         if (power.click("tap"))
         {
             Greenfoot.setWorld(RoomGilles.RoomGilles);

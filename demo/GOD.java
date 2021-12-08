@@ -31,9 +31,9 @@ public class GOD extends World
 
     }
 
-    boolean force_switch = true;
-
-    public void act()
+    public static boolean force_switch = true;
+    
+    public static void forceswitch()
     {
         if (force_switch)
         {
@@ -43,5 +43,10 @@ public class GOD extends World
                                                     // between them.
             force_switch = false;
         }
+    }
+
+    public void act()
+    {
+        
     }
 }

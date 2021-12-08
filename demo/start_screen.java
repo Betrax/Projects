@@ -28,6 +28,7 @@ public class start_screen extends World
 
     public void act()
     {
+        GOD.forceswitch();
         if (delay1.d(100) && switches[0])
         {
             start.locationY += 3;

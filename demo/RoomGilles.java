@@ -27,6 +27,7 @@ public class RoomGilles extends World
 
     public void act()
     {
+        GOD.forceswitch();
         if (desk.click("tap"))
         {
             Greenfoot.setWorld(DesktopGilles.DesktopGilles);

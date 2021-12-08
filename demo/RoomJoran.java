@@ -27,6 +27,7 @@ public class RoomJoran extends World
 
     public void act()
     {
+        GOD.forceswitch();
         key();
         if (laptop.click("tap"))
         {

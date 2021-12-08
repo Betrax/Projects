@@ -58,6 +58,7 @@ public class RouterGilles extends World
 
     public void act()
     {
+        GOD.forceswitch();
         if (location() == 99)
         {
             if (Arrays.equals(code, answer))

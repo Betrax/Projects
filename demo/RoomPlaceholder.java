@@ -13,6 +13,7 @@ public class RoomPlaceholder extends World
 
     public void act()
     {
+        GOD.forceswitch();
         setBackground(background.draw(260, 260));
     }
 }

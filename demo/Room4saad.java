@@ -89,6 +89,7 @@ public class Room4saad extends World
 
     public void act()
     {
+        GOD.forceswitch();
         if (Help.click("tap"))
         {
             addObject(Helpbox, 100, 200);

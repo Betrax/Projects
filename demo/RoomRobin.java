@@ -89,6 +89,7 @@ public class RoomRobin extends World
 
     public void act()
     {
+        GOD.forceswitch();
         if (Alert.click("tap"))
         {
 

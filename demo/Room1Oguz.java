@@ -39,6 +39,7 @@ public class Room1Oguz extends World
 
     public void act()
     {
+        GOD.forceswitch();
         delayArray();
         // These are all animations that need to happen to fake that 3D effect, each animation is
         // prebaked
