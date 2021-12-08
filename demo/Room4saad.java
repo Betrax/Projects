@@ -47,7 +47,7 @@ public class Room4saad extends World
     prop vraag = new prop("Saad/Vraag.png", 100, 100, 200, 100, 100);
     prop antwoord = new prop("Saad/ANTWOORD A.png", 60, 60, 600, 150, 100);
     prop antwoordb = new prop("Saad/ANTWOORD B.png", 60, 60, 325, 200, 100);
-    prop antwoordc = new prop("Saad/ANTWOORD C.png", 60, 60, 120, 250, 100);
+    prop antwoordc = new prop("Saad/ANTWOORD CCC.png", 60, 60, 120, 250, 100);
     prop antwoordd = new prop("Saad/Antwoord D.png", 60, 60, 173, 300, 100);
     // Tweede Vraag
     prop vraag2 = new prop("Saad/Vraag2.png", 100, 100, 255, 95, 100);
