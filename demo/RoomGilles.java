@@ -49,7 +49,7 @@ public class RoomGilles extends World
             if (door_open == true)
             {
                 Greenfoot.playSound("door.mp3");
-                Greenfoot.setWorld(RoomRobin.RoomRobin);
+                Greenfoot.setWorld(new end_screen());
             }
             else
             {
