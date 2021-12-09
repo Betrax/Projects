@@ -140,6 +140,8 @@ public class Room4saad extends World
         }
         if (Red5.click("tap"))
         {
+            removeObject(Arrowh);
+            removeObject(Help);
             addObject(licht, 100, 200);
             removeObject(Red5);
             removeObject(Helpbox);
